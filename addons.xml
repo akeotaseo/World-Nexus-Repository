@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.program.autowidget" name="AutoWidget" version="20.3.7.0test" provider-name="drinfernoo">
+<addon id="plugin.program.autowidget" name="AutoWidget" version="19.0.86s" provider-name="drinfernoo">
     <requires>
+        <import addon="script.module.kodi-six" />
         <import addon="script.module.pil" />
         <import addon="script.module.six" />
     </requires>
 
     <extension point="xbmc.python.pluginsource" library="main.py">
-        <provides>executable video music</provides>
+        <provides>executable video</provides>
     </extension>
 
     <extension point="xbmc.service" library="service.py" />
@@ -15,20 +16,12 @@
     <extension point="kodi.context.item">
         <menu id="kodi.core.main">
             <item library="context_add.py">
-                <label>$ADDON[plugin.program.autowidget 30003]</label>
-                <visible>String.IsEqual(Window(10000).Property(context.autowidget),true)</visible>
+                <label>$ADDON[plugin.program.autowidget 32003]</label>
+                <visible>String.IsEqual(Window(10000).Property(contextt.autowidget),true)</visible>
             </item>
             <item library="context_refresh.py">
-                <label>$ADDON[plugin.program.autowidget 30006]</label>
+                <label>$ADDON[plugin.program.autowidget 32006]</label>
                 <visible>String.Contains(ListItem.FolderPath, plugin://plugin.program.autowidget)</visible>
-            </item>
-			<item library="context_refresh_single.py">
-                <label>$ADDON[plugin.program.autowidget 30046]</label>
-                <visible>!String.IsEmpty(ListItem.Property(autoID)) + [!String.IsEqual(ListItem.Property(autoAction),static) + !String.IsEqual(ListItem.Property(autoAction),merged)]</visible>
-            </item>
-			<item library="clear_cache_single.py">
-                <label>$ADDON[plugin.program.autowidget 30116]</label>
-                <visible>!String.IsEmpty(ListItem.Property(autoCache))</visible>
             </item>
         </menu>
     </extension>
@@ -37,94 +30,13 @@
         <reuselanguageinvoker>true</reuselanguageinvoker>
         <summary lang="en_GB">Automatically changes out widgets</summary>
         <description lang="en_GB">Automatically changes out widgets on the homescreen for a more interesting browsing experience.</description>
-	<summary lang="es_ES">Cambia los widgets automáticamente</summary>
-	<description lang="es_ES">Cambia los widgets en la pantalla de inicio automáticamente para una experiencia de navegación más interesante.</description>
-	<platform>all</platform>
+    <summary lang="es_ES">Cambia los widgets automáticamente</summary>
+    <description lang="es_ES">Cambia los widgets en la pantalla de inicio automáticamente para una experiencia de navegación más interesante.</description>
+    <platform>all</platform>
         <license>LGPL-3.0</license>
         <website>https://www.github.com/drinfernoo/</website>
         <source>https://www.github.com/drinfernoo/plugin.program.autowidget/</source>
         <news>
-3.7.0
- - Optimize caching for performance and reliability
- - Fix direct shortcuts
- - Fix Settings Shortcuts for dependency add-ons
-3.6.1
- - Fix playing direct shortcuts for some items
- - Fix cache clearing again
-3.6.0
- - Convert all file and path handling to xbmcvfs
- - Add more feedback and granular controls during backup/restore
-3.5.1
- - Fix sorting bug with higher group counts
-3.5.0
- - Allow bulk operations in some groups
- - More informative dialogs
- - Allow manually sorting groups in "My Groups"
- - Fixes for direct shortcuts
- - Update "version" attribute in metafiles when updating
-3.4.2
- - Some fixes for constant notification
-3.4.1
- - Fix clearing cache from settings
-3.4.0
- - Rework caching mechanism
- - Add more notifications of progress
- - Add placeholder items when no content is loaded
-3.3.7
- - Delay widget updates during library scans or when in media views
- - Fix widget cleaning scan for skins which don't use Skin Shortcuts
- - Fix refreshing widgets created before 3.3.0
- - Add more content type choices in editor dialog
-3.3.6
- - Fix "Next Page" for Python 2.7
-3.3.5
- - Better handling of error and empty states
- - Better handling of "Next Page" items
- - Fix "Active Widgets" menu
- - Delay library updates when inside media views
-3.3.4
- - Fix "Next Page" localizations
-3.3.3
- - Fix "Clear Cache"
-3.3.2
- - Fix bug when paths return no items
-3.3.1
- - Fix bug when Skin Shortcuts is not installed
- - More improvements to page item handling
-3.3.0
- - Add "Copy Group" in group context menu
- - Add "Create New ... Group" in "My Groups" menu
- - Add "Clear Cache" in "Tools" menu
- - Add "Refresh Widget" to widget context menu
- - Add "Clear Cache" to widget context menu
- - Add rudimentary error item for failed widgets
- - Add "Icon Packs" for library widgets from genres, studios, and countries
- - Remove dependency on Kodi Six
- - Allow editing content type
- - Allow Cycling Widgets to pull from a subset of paths
- - Support cast thumbnails for Kodi N
- - Fix translatePath reference again
- - Faster and more robust item creation
- - Make `.widget` files much simpler
- - Better support for library paths
- - Better support for music
-3.2.3
- - Add English (US) and Portugese localizations
-3.2.2
- - Add more localizations
- - Better "Next Page" detection
- - Support for "Next Page" items in other languages
-3.2.1
- - Fix for items with no artwork
-3.2.0
- - Add setting to prefer episodes/shows when removing duplicates
- - Rework duplicate removal
- - Fix bug in Active Widgets editor dialog
- - Fix landscape art for some items
- - Fix paged widgets not resetting on boot
- - Format with black
-3.1.9
- - Fix error with translatePath
 3.1.8
  - Fix resume progress on items
 3.1.7
@@ -365,7 +277,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.program.downloader19" name="[B][COLOR orange]World Updater - Tools[/COLOR][/B]" version="19.0.50" provider-name="TechNEWSology">
+<addon id="plugin.program.downloader19" name="[B][COLOR orange]World Updater - Tools[/COLOR][/B]" version="19.0.50a" provider-name="TechNEWSology">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 	</requires>
@@ -417,7 +329,7 @@
 	</extension>
 </addon>
 
-<addon id="service.World.Build" name="[B][COLOR orange]World Build Service[/COLOR][/B]" version="19.1.10a" provider-name="TechNEWSology">
+<addon id="service.World.Build" name="[B][COLOR orange]World Build Service[/COLOR][/B]" version="19.1.10b" provider-name="TechNEWSology">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
   </requires>
