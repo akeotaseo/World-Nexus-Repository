@@ -365,7 +365,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.program.downloader20" name="[B][COLOR orange]World Updater - Tools[/COLOR][/B]" version="20.0.1" provider-name="TechNEWSology">
+<addon id="plugin.program.downloader19" name="[B][COLOR orange]World Updater - Tools[/COLOR][/B]" version="19.0.50" provider-name="TechNEWSology">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 	</requires>
@@ -376,9 +376,10 @@
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en_GB">World Updater - Tools</summary>
 		<description lang="el_GR">[B][COLOR orange]-[/COLOR][/B] Αυτόματη ενημέρωση αρχείων και συντομεύσεων του Build
+[B][COLOR orange]-[/COLOR][/B] Καθαρή εγκατάσταση του Build με επιλογή διατήρησης στοιχείων στη νέα μετάβαση.
 [B][COLOR orange]-[/COLOR][/B] Αυτοματοποιημένη καταχώριση νέων κλειδιών YouTube Api
 [B][COLOR orange]-[/COLOR][/B] Επιλογή αυτοματοποιημένης καταχώρισης τιμών Advanced Settings
-[B][COLOR orange]-[/COLOR][/B] Ομαδοποιημένες συντομεύσεις εργαλείων
+[B][COLOR orange]-[/COLOR][/B] Ομαδοποιημένες συντομεύσεις εργαλείων και ρυθμίσεων κελύφους
 [B][COLOR orange]-[/COLOR][/B] Επιλογή εγκατάστασης Binary Addons και Καθαρισμός (Packages-Thumbnails)
 [B][COLOR orange]-[/COLOR][/B] Δημιουργία αντιγράφου ασφαλείας αρχείου zip του Build
 [B][COLOR orange]-[/COLOR][/B] Υπηρεσίες Εξουσιοδότησης και Επαναφοράς Debrid</description>
@@ -414,5 +415,24 @@
 			<fanart>fanart.jpg</fanart>
 		</assets>
 	</extension>
+</addon>
+
+<addon id="service.World.Build" name="[B][COLOR orange]World Build Service[/COLOR][/B]" version="19.1.10a" provider-name="TechNEWSology">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">World Build Service</summary>
+    <description lang="en">World Build Service</description>
+    <disclaimer>TechNEWSology World Service</disclaimer>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+  </extension>
 </addon>
 </addons>
