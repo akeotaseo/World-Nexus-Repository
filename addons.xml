@@ -277,10 +277,10 @@
     </extension>
 </addon>
 
-<addon id="plugin.program.downloader19" name="[B][COLOR orange]World Updater - Tools[/COLOR][/B]" version="19.0.60" provider-name="TechNEWSology">
+<addon id="plugin.program.downloader19" name="[B][COLOR orange]World Updater - Tools[/COLOR][/B]" version="19.0.62" provider-name="TechNEWSology">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="service.World.Build" version="0.0.0"/>
+
 
 
 
@@ -340,6 +340,33 @@ plugin.video.favourites
       <icon>icon.png</icon>
     </assets>
     </extension>
+</addon>
+
+<addon id="repository.atlas" name="Atlas Repository" version="0.0.2" provider-name="NP-Bugatsinho -(Modified by TechNEWSology)">
+	<extension point="xbmc.addon.repository" name="Atlas Repository">
+		<info compressed="false">https://raw.githubusercontent.com/TechNEWSologyBuilder/atlas/main/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/TechNEWSologyBuilder/atlas/main/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/TechNEWSologyBuilder/atlas/main/</datadir>
+		<dir>
+			<info compressed="false">https://gknwizard.eu/repo/Builds/TechNEWsology/_atlas_repo/addons.xml</info>
+			<checksum>https://gknwizard.eu/repo/Builds/TechNEWsology/_atlas_repo/addons.xml.md5</checksum>
+			<datadir zip="true">https://gknwizard.eu/repo/Builds/TechNEWsology/_atlas_repo/</datadir>
+		</dir>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Atlas Repository</summary>
+		<description>Atlas Repo</description>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
 </addon>
 
 <addon id="repository.plexkodiconnect" name="PlexKodiConnect Addons for Kodi 20 Nexus" version="3.0.0" provider-name="Croneter">
@@ -425,7 +452,21 @@ plugin.video.favourites
     </extension>
 </addon>
 
-<addon id="service.World.Build" name="[B][COLOR orange]World Build Service[/COLOR][/B]" version="19.1.23" provider-name="TechNEWSology">
+<addon id="service.autoexec" name="Autoexec Service" version="1.0.0" provider-name="your username">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+	</requires>
+	<extension point="xbmc.service" library="autoexec.py">
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">Automatically run python code when Kodi starts.</summary>
+		<description lang="en_GB">The Autoexec Service will automatically be run on Kodi startup.</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE Version 2</license>
+	</extension>
+</addon>
+
+<addon id="service.World.Build" name="[B][COLOR orange]World Build Service[/COLOR][/B]" version="19.1.24" provider-name="TechNEWSology">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="vfs.sftp" />
@@ -433,7 +474,6 @@ plugin.video.favourites
     <import addon="vfs.libarchive" />
     <import addon="inputstream.rtmp" />
     <import addon="inputstream.adaptive" />
-    <import addon="script.module.resolveurl.xxx" version="0.0.0"/>
   </requires>
   <extension point="xbmc.python.script" library="addon.py">
     <provides>executable</provides>
