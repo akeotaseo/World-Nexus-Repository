@@ -342,6 +342,342 @@ plugin.video.favourites
     </extension>
 </addon>
 
+<addon id="plugin.video.a4kstreaming"
+       name="a4kStreaming"
+       version="1.47.0"
+       provider-name="Unknown">
+    <requires>
+      <import addon="script.module.requests"/>
+      <import addon="script.module.beautifulsoup4"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+      <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="main_service.py" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">a4kStreaming - IMDb-based media browser</summary>
+        <description>
+IMDb-based media browser addon for KODI with streaming support via external providers.
+Designed for low-end devices and Estuary skin.
+        </description>
+        <platform>all</platform>
+        <reuselanguageinvoker>true</reuselanguageinvoker>
+        <license>MIT License</license>
+        <website>https://github.com/newt-sc/a4kStreaming</website>
+        <source>https://github.com/newt-sc/a4kStreaming</source>
+        <assets>
+            <icon>icon.png</icon>
+            <screenshot>screenshot-01.jpg</screenshot>
+            <screenshot>screenshot-02.jpg</screenshot>
+            <screenshot>screenshot-03.jpg</screenshot>
+            <screenshot>screenshot-04.jpg</screenshot>
+            <screenshot>screenshot-05.jpg</screenshot>
+            <screenshot>screenshot-06.jpg</screenshot>
+        </assets>
+        <news>
+[v1.47.0]:
+  * Prevent recursion on cache miss and autoplay on
+
+[v1.46.0]:
+  * Fix trailers
+
+[v1.45.0]:
+  * Fix some cases when season browsing is not showing all episodes
+  * Fix trailers search failing when leaving KODI open for some time
+
+[v1.44.0]:
+  * Fix season watch status
+
+[v1.43.0]:
+  * Fix trailers (2nd attempt)
+
+[v1.42.0]:
+  * Update episodes date ranges
+
+[v1.41.0]:
+  * Fix trailers
+
+[v1.40.0]:
+  * Fix issue when searching returns no results
+
+[v1.39.0]:
+  * Handle season browsing issue when IMDB returns start episode date after the end episode date
+  * Fix issue when searching with upper case first letter
+
+[v1.38.0]:
+  * Dolby Vision stream detection and filtering (DV sources disabled by default)
+
+[v1.37.0]:
+  * .m2ts resolve support for RD
+
+[v1.36.0]:
+  * Change RD resolve order
+
+[v1.35.0]:
+  * Improve title result size calculation
+
+[v1.34.0]:
+  * Add movie results max size filter
+
+[v1.33.1]:
+  * Fix py3 issue
+
+[v1.33.0]:
+  * Add recommended providers usage for general speedup
+
+[v1.32.0]:
+  * Back navigation from source files browsing
+
+[v1.31.0]:
+  * Source select dialog now pre-selects first result
+  * When the Debrid resolve fails, show the source select dialog with the last selected source pre-selected
+  * Allow to resolve archives for streaming from RD
+
+[v1.30.0]:
+  * RealDebrid resolving improvements
+
+[v1.29.0]:
+  * Improve actor browsing. Remove non-relevent titles and include TV Shows.
+
+[v1.28.0]:
+  * Small fix to handle meta mismatch between season's episode vs episode's release date
+
+[v1.27.0]:
+  * Fix browsing seasons of some shows with incomplete meta for future works
+
+[v1.26.0]:
+  * Handle meta issues where an older episode has newer release date
+
+[v1.25.0]:
+  * Additional requests error handling
+
+[v1.24.0]:
+  * Improve Actor/Actress/Director titles browsing
+
+[v1.23.0]:
+  * Fix force select context menu
+
+[v1.22.0]:
+  * Improve episode thumbnail meta
+
+[v1.21.0]:
+  * Fix seasons year
+
+[v1.20.0]:
+  * Pass episodes country meta to the provider
+  * Use only last episodes release date for season ranges
+
+[v1.19.0]:
+  * Fix PM browsing in KODI 18 - redefining variable from scope
+
+[v1.18.0]:
+  * Show only video files in Premiumize folder browsing by default - allows using "Play from here" KODI context menu to play the files sequentially
+  * New context menu:
+    * Premiumize: All Files - available on PM folders, allows browsing without filters
+
+[v1.17.0]:
+  * Support subtitles from Premiumize files browsing if located next to video file with same name
+
+[v1.16.0]:
+  * New settings:
+    * Autoplay - instead of showing source select, auto choose the first source that resolves
+  * New context menu:
+    * Force source select - only available when Autoplay is enabled
+  * Add more episode auto selection checks
+  * Allow browsing cast and crew to find titles which they are known for (This is new API which currently returns test results)
+
+[v1.15.0]:
+  * Add RD expired notification
+
+[v1.14.0]:
+  * Fix hash check issues
+
+[v1.13.0]:
+  * Allow "More like this" to be used without IMMDb token
+  * Add more TVShows info on titles listing
+  * Add "Cast and Crew" context menu on TVShows
+  * Show notification if the specified quality filter is being ignored when no results are left after it
+
+[v1.12.0]:
+  * Ensure character casing matches on debrid check
+
+[v1.11.0]:
+  * Add support for provider's own caching
+
+[v1.10.0]:
+  * Remove TVShow item from season listing
+  * Add episode title template without number
+
+[v1.9.0]:
+  * Add watched indication to TVShow title in season's listing when all seasons are watched
+  * Include director, writer, cast, country and studio meta in general title views
+
+[v1.8.0]:
+  * Ignore sample videos in RD's resolve files selection
+
+[v1.7.0]:
+  * Speedup source searching for episodes from still airing seasons
+
+[v1.6.0]:
+  * Improve episode selection matching
+
+[v1.5.0]:
+  * When poster and thumb are the same use the same size for them
+  * Fix poster aspect ratio in some skins
+
+[v1.4.0]:
+  * Fix titles do not have poster in AURA skin
+
+[v1.3.0]:
+  * New settings:
+    * Max quality of sources
+
+[v1.2.0]:
+  * Prompt for episode selection for uncomplete packs with single video
+
+[v1.1.0]:
+  * Fix episode auto selection being skipped for some results
+
+[v1.0.0]:
+  * Fix TV Specials not being shown in search and other views
+  * Increase Cast And Crew view limit
+  * PM support for deleting files/folders/transfers and clearing finished transfers
+
+[v0.26.0]:
+  * AllDebrid and RealDebrid:
+    * Cloud browsing
+    * Deleting transfers
+    * Caching additional sources
+
+[v0.25.0]:
+  * AllDebrid support
+
+[v0.24.0]:
+  * Reduce file size filter
+  * Remove debug logs
+
+[v0.23.0]:
+  * RealDebrid support
+
+[v0.22.0]:
+  * New context menu:
+    * Trailer
+    * Add sources - Used to cache new sources to debrid
+  * Option to cache sources if none are found
+  * Add debrid transfers browsing
+  * Fix issue of not finding enough sources for movie titles from the Search menu
+
+[v0.21.0]:
+  * Add debrid files browsing and streaming
+
+[v0.20.0]:
+  * Fix missing seasons meta breaking tvshow scraping
+
+[v0.19.0]:
+  * Remove the extra info view on title click
+  * New context menu:
+    * Cast and Crew - Showing the extra info view
+  * New settings:
+    * Season title template
+    * Episode title template
+  * Cache last title for the play by id action to speedup usage from TheMovieDb Helper
+
+[v0.18.0]:
+  * Fix poster transform twice
+
+[v0.17.0]:
+  * Support play action with an id only
+  * Add player meta json for tmdb helper
+
+[v0.16.0]:
+  * Fix more like this context menu for KODI 19
+  * More patterns for episode auto selection
+
+[v0.15.0]:
+  * Select proper image for episode thumbnail
+  * Add one more pattern for episode auto selection
+
+[v0.14.0]:
+  * Fix provider having removed sources
+
+[v0.13.0]:
+  * Update cached results time each time they are used
+
+[v0.12.0]:
+  * Show proper error notification when invalid IMDb token is set
+
+[v0.11.0]:
+  * Fix provider init
+
+[v0.10.0]:
+  * Fix view mode switching on cancellation
+  * Use bytes format for json parsing (speeds up some results loading)
+
+[v0.9.0]:
+  * Fix setting update needs addon reinitialization
+
+[v0.8.0]:
+  * Fix auto video selection in KODI 19
+
+[v0.7.0]:
+  * Fix KODI 19 Matrix support
+  * Speedup list items creation
+
+[v0.6.0]:
+  * Improve auto episode selection from packs
+
+[v0.5.0]:
+  * New context menu:
+    * More like this - Showing similar titles
+
+[v0.4.0]:
+  * Update description
+
+[v0.3.0]:
+  * Fix browsing shows which do not have any episodes with release dates
+  * Fix some titles being filtered out
+
+[v0.2.0]:
+  * Speedup loading by removing query for watchlist status
+  * Order lists by date added (desc)
+  * Add separate setting for lists page size
+  * Improve posters quality
+  * Improve cast for movies
+
+[v0.1.0]:
+  * IMDb:
+    * Authentication via cookie
+    * Browsing for titles
+      * Trending
+      * Fan Favourites
+      * Recommended
+      * Discover by Year
+    * Browsing Shows
+      * Seasons
+      * Season episodes
+    * Lists
+    * Watchlist
+    * Search for titles or people
+    * Mark as watched/unwatched (by rating/unrating a title)
+      * Auto mark as watched when played more than 90 percents
+    * Add/Remove to/from list
+    * Artwork for posters, thumbnails and fanart
+    * Trailers
+    * Rate/Unrate titles
+  * Provider support
+    * Install
+    * Manage
+    * Auto update
+    * Caching of results
+  * Debrid support
+    * Premiumize
+  * Misc
+    * Migrate watched titles from Trakt.tv to IMDb (via rating)
+    * Migrate movies and shows collection from Trakt.tv to IMDb custom lists
+        </news>
+    </extension>
+</addon>
+
 <addon id="repository.atlas" name="Atlas Repository" version="0.0.2" provider-name="NP-Bugatsinho -(Modified by TechNEWSology)">
 	<extension point="xbmc.addon.repository" name="Atlas Repository">
 		<info compressed="false">https://raw.githubusercontent.com/TechNEWSologyBuilder/atlas/main/addons.xml</info>
@@ -464,6 +800,258 @@ plugin.video.favourites
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE Version 2</license>
 	</extension>
+</addon>
+
+<addon id="service.subtitles.a4ksubtitles"
+       name="a4kSubtitles"
+       version="3.3.0"
+       provider-name="Unknown">
+    <requires>
+      <import addon="script.module.requests"/>
+      <import addon="vfs.libarchive" optional="true"/>
+    </requires>
+    <extension point="xbmc.subtitle.module" library="main.py"/>
+    <extension point="xbmc.service" library="main_service.py" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">a4kSubtitles - Multi-Source Subtitles Addon</summary>
+        <description>
+Multi-source subtitles addon optimized for Seren and a4kScrapers.
+Supports: OpenSubtitles, BSPlayer, Podnadpisi.NET, Subscene, Addic7ed
+        </description>
+        <platform>all</platform>
+        <reuselanguageinvoker>true</reuselanguageinvoker>
+        <license>MIT License</license>
+        <website>https://github.com/newt-sc/a4kSubtitles</website>
+        <source>https://github.com/newt-sc/a4kSubtitles</source>
+        <assets>
+            <icon>icon.png</icon>
+            <screenshot>screenshot-01.png</screenshot>
+            <screenshot>screenshot-02.png</screenshot>
+            <screenshot>screenshot-03.png</screenshot>
+        </assets>
+        <news>
+[v3.3.0]:
+  * Improve Subscene support
+
+[v3.2.0]:
+  * Option to disable subs encoding detection
+
+[v3.1.0]:
+  * Force proper embedded subs selection based on preferred language overriding KODI
+  * Subs encoding fallback to predefined list in case auto detection fails
+
+[v3.0.0]:
+  * Use cf bypass for Subscene
+  * Auto-detect subs encoding and convert to utf-8
+
+[v2.8.0]:
+  * Support tvshows with more than 250 episodes for episode id lookup when tvshow imdb id is provided.
+
+[v2.7.0]:
+  * Support tvshow imdb id, along with season and episode passed from video file url.
+
+[v2.6.0]:
+  * Support imdb id (movie or episode) passed from video file url.
+
+[v2.5.0]:
+  * Add TLS adapter fallback
+
+[v2.4.0]:
+  * Fix some ssl issues
+
+[v2.3.0]:
+  * Add concurrency error handling
+
+[v2.2.0]:
+  * Fix KODI 19 Matrix support
+
+[v2.1.0]:
+  * Fix Persian search in Subscene
+
+[v2.0.0]:
+  * Use IMDb as main source for all meta.
+  * Retry on 503 (Service Unavailable). OpenSubtitles and Subscene seems to return it occasionally.
+
+[v1.8.0]:
+  * Remove SubDb (Site is down)
+  * Make lib vfs optional since there are fallbacks and it is used as last case scenario. Thus making the addon installable on platforms which are not supported by lib vfs.
+
+[v1.7.2]:
+  * Improve results sort based on title match
+
+[v1.7.1]:
+  * Drop python meta as it prevents installations on pre Kodi 19 versions
+
+[v1.7.0]:
+  * Update python meta to enable Kodi 19 installations
+
+[v1.6.0]:
+  * Add option to auto download first subtitle result silently
+
+[v1.5.0]:
+  * Auto open search dialog only on movie and tvshow videos
+
+[v1.4.0]:
+  * Add option to auto open the search dialog when the video does not have subtitles
+
+[v1.3.0]:
+  * Improve tvshow year scraping
+
+[v1.2.0]:
+  * Use internal ZipFile for extraction with a fallback to vfs.libarchive
+
+[v1.1.0]:
+  * Improve imdb id scraping
+
+[v1.0.1]:
+  * Add screenshots
+
+[v1.0.0]:
+  * Invalidate BSPlayer results cache when download links expire
+  * Extraction fallback: zip -> gzip -> raw
+
+[v0.0.30]:
+  * Add service names in ad detection
+  * Removed the option to disable cleaning of ads
+  * Add remote fetching of addic7ed data
+
+[v0.0.29]:
+  * Fix Podnadpisi download of results missing filename meta
+  * Fix last results cache not invalidated on language preferences change
+
+[v0.0.28]:
+  * Attempt scrape of imdb id when missing
+  * Improve filename parsing
+  * Fix SubDB lang code
+  * Fix Podnadpisi not returning release name
+
+[v0.0.27]:
+  * Attempt to auto-fix a garbled cyrillic encoded subtitles
+  * Fix more encoding issues
+  * Ensure progress dialog close even if the addon crashes
+  * Apply color to service name in results and bold tags
+  * Show notification if imdb id is missing
+
+[v0.0.26]:
+  * Support for Addic7ed
+  * Improve cache of the last results
+  * Don't show progress when showing results from cache
+
+[v0.0.25]:
+  * Fix cancellation thread exit
+
+[v0.0.24]:
+  * Show progress dialog only for search
+
+[v0.0.23]:
+  * Add progress dialog
+  * Support cancellation
+
+[v0.0.22]:
+  * Fix meta string conversion issue
+
+[v0.0.21]:
+  * TVShow year scrape from imdb when necessary
+
+[v0.0.20]:
+  * Improve Subscene tvshow matching
+  * Extract first sub file from zips when none is matched
+  * Fix Podnadpisi not working properly for tvshows
+  * Fix non-ascii video file title issues
+  * Add tvshow tests
+
+[v0.0.19]:
+  * Update settings
+  * Fix language code suffix format in the subtitle file name
+  * Support for Subscene
+
+[v0.0.18]:
+  * Support for Podnadpisi.NET
+  * Support for SubDB
+
+[v0.0.17]:
+  * Reuse KODI's Python language invoker
+    * Improves performance on low-end devices when switching subtitles for best match
+  * Url decode subtitle names
+
+[v0.0.16]:
+  * Cache last result
+  * OpenSubtitles always queries:
+    * by imdb id and title
+    * by video file hash
+  * Improve results ordering:
+    * preferred lang
+    * lang
+    * synced
+    * name match
+    * rating
+    * hearing impaired
+    * subtitle service
+  * Fix url with numbers matching in ads detection
+
+[v0.0.15]:
+  * Remove ads by default
+  * Support for BSPlayer
+  * Additional option for OpenSubtitles to use file hash (Limits results to exact matches)
+
+[v0.0.14]:
+  * Fix API and normal usage at the same time
+
+[v0.0.13]:
+  * Exclude development files from release
+
+[v0.0.12]:
+  * Removal of ads (Experimental)
+  * Fix extract issue when file contains unicode symbols
+
+[v0.0.11]:
+  * Changelog in KODI
+
+[v0.0.10]:
+  * Inserted language code in sub filename
+
+[v0.0.9]:
+  * Implemented (orginal, default, none, forced_only) as KODI language setting
+  * Fixed minor bugs in API implementation
+  * Added .idea folder to .gitignore
+
+[v0.0.8]:
+  * opensubtitles should make max 2 requests for separate languages
+  * lint updates
+  * add tests for download
+
+[v0.0.7]:
+  * API class rename
+
+[v0.0.6]:
+  * fix core requiring handle even with API usage
+
+[v0.0.5]:
+  * expose API for usage without KODI
+  * add tests for search
+
+[v0.0.4]:
+  * distribution process:
+    * KODI repository with updates based on github releases
+    * addons.xml and addons.xml.crc auto generation via git hooks
+    * release automation on merge to master via Github Actions
+
+[v0.0.3]:
+  * general settings for configuring requests timeout and results limit
+  * additional ordering of the results depending on the similarity ratio of the video file name and the subtitle file name
+
+[v0.0.2]:
+  * improve archive extraction support
+  * limit the results and add requests timeout
+  * fix OpenSubtitles authentication
+  * handle debug logging detection issues
+
+[v0.0.1]:
+  * initial working version (search and download subtitles)
+  * OpenSubtitles support with optional authentication
+  * results ordering with preferred language ordered first
+        </news>
+    </extension>
 </addon>
 
 <addon id="service.World.Build" name="[B][COLOR orange]World Build Service[/COLOR][/B]" version="19.1.24" provider-name="TechNEWSology">
