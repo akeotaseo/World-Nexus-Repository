@@ -66,36 +66,12 @@
     </extension>
 </addon>
 
-<addon id="repository.WorldNexus" name="World Nexus Repository" version="0.1.1" provider-name="World">
-	<extension point="xbmc.addon.repository" name="World Nexus Repository">
-			<dir>
-				<info compressed="false">https://raw.githubusercontent.com/akeotaseo/WorldNexus/main/addons.xml</info>
-				<checksum>https://raw.githubusercontent.com/akeotaseo/WorldNexus/main/addons.xml.md5</checksum>
-				<datadir zip="true">https://raw.githubusercontent.com/akeotaseo/WorldNexus/main/</datadir>
-			</dir>
-			<dir>
-				<info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
-				<checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
-				<datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
-			</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>World Nexus Repository</summary>
-		<description>World Nexus Repository</description>
-		<platform>all</platform>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
-	</extension>
-</addon>
-
-<addon id="repository.WorldNexus20test" name="World Nexus Repository 20test" version="0.1.8" provider-name="World">
+<addon id="repository.WorldNexus20test" name="World Nexus Repository 20test" version="0.1.9" provider-name="World">
 	<extension point="xbmc.addon.repository" name="World Nexus Repository 20test">
 			<dir>
-				<info compressed="false">https://raw.githubusercontent.com/akeotaseo/WorldNexus/main/addons.xml</info>
-				<checksum>https://raw.githubusercontent.com/akeotaseo/WorldNexus/main/addons.xml.md5</checksum>
-				<datadir zip="true">https://raw.githubusercontent.com/akeotaseo/WorldNexus/main/</datadir>
+				<info compressed="false">https://raw.githubusercontent.com/akeotaseo//World-Nexus-Repository-20test/main/addons.xml</info>
+				<checksum>https://raw.githubusercontent.com/akeotaseo//World-Nexus-Repository-20test/main/addons.xml.md5</checksum>
+				<datadir zip="true">https://raw.githubusercontent.com/akeotaseo//World-Nexus-Repository-20test/main/</datadir>
 			</dir>
 			<dir>
 				<info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
