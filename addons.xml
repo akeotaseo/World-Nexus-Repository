@@ -1,5 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
+<addon id="context.subtitlesdialog.contextmenu" name="Subtitles Dialog - Contextmenu" version="1.1.1" provider-name="burekas">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="kodi.context.item" library="addon.py">
+        <item>
+            <label>32000</label>
+            <visible>true</visible>
+        </item>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+        <summary lang="en">Adds a subtitles dialog contextmenu button</summary>
+        <description lang="en">Adds a subtitles dialog contextmenu button to context menu, so you can use the subtitles dialog also when kodi is not playing.[CR] You can use when focusing on an item and it will automatically check it for you without typing or just using the manual search button to check if subtitles exist</description>
+        <platform>all</platform>
+        <language></language>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+        <forum>http://www.hometheater.co.il/vt265959.html</forum>
+        <source></source>
+    </extension>
+</addon>
+
+<addon id="plugin.video.daddylive" name="Daddylive" version="2.1a" provider-name="mbebe">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" />
+        <import addon="script.module.inputstreamhelper" />
+        <import addon="script.module.six"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <description lang="pl">1.2</description>
+        <disclaimer lang="pl">test
+        </disclaimer>
+        <summary lang="en">Live TV and Sports</summary>
+        <description lang="en">Live TV and Sports</description>
+        <disclaimer lang="en">test
+        </disclaimer>
+        <language>pl</language>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <website></website>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
 <addon id="repository.plexkodiconnect" name="PlexKodiConnect Addons for Kodi 20 Nexus" version="3.0.0" provider-name="Croneter">
 	<requires>
 		<import addon="xbmc.addon" version="12.0.0"/>
@@ -83,6 +136,30 @@
     </extension>
 </addon>
 
+<addon id="resource.font.fonts" name="fonts" version="0.0.1" provider-name="jurialmunkey">
+    <requires>
+        <import addon="kodi.resource" version="1.0.0"/>
+    </requires>
+
+    <extension point="kodi.resource.font" compile="false" />
+
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">fonts</summary>
+        <description lang="en_GB"></description>
+        <language></language>
+        <platform>all</platform>
+        <license>Apache-2.0</license>
+        <forum></forum>
+        <email></email>
+        <source></source>
+        <news></news>
+        <disclaimer></disclaimer>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+
 <addon id="resource.images.studios.white" name="Studio Icons - White" version="1.1.3" provider-name="Team Kodi">
 	<extension point="kodi.resource.images" compile="true" type="studios" />
 	<requires>
@@ -104,9 +181,9 @@
 </addon>
 
 <addon
-  id="skin.20NezusWorld"
+  id="skin.20NexusWorld"
   version="4.2.0"
-  name="skin.20NexusWorld-beta"
+  name="20NexusWorld-beta"
   provider-name="Helly,bsoriano,Gb,Tk,ML,X">
   <requires>
     <import addon="xbmc.gui" version="5.15.0"/>
