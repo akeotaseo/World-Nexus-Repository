@@ -480,8 +480,8 @@ NOTE: use Keymap Editor to map desired input or edit keymap file (fullscreenvide
 <addon
   id="skin.20NexusWorld"
   version="4.2.0"
-  name="20NexusWorld-beta"
-  provider-name="Helly,bsoriano,Gb,Tk,ML,X">
+  name="skin.20NexusWorld-beta"
+  provider-name="Helly,bsoriano">
   <requires>
     <import addon="xbmc.gui" version="5.15.0"/>
     <import addon="script.favourites" version="8.1.2"/>
