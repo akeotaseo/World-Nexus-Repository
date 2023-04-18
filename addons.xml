@@ -24,7 +24,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.program.downloader19" name="[B][COLOR orange]World Updater - Tools[/COLOR][/B]" version="20.1.0c" provider-name="TechNEWSology">
+<addon id="plugin.program.downloader19" name="[B][COLOR orange]World Updater - Tools[/COLOR][/B]" version="20.1.0d" provider-name="TechNEWSology">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 
@@ -447,6 +447,21 @@ plugin.video.favourites
 		</news>
 		<license>Creative Commons Attribution-Share Alike 3.0 United States</license>
 	</extension>
+</addon>
+
+<addon id="script.module.parrot" name="Parrot Utils" version="111.1.0" provider-name="Parrot Developers">
+  <requires>
+    <import addon="script.module.requests" version="2.18.4"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Utilities for Parrot TV addons.</summary>
+    <description>Utilities for Parrot TV addons.</description>
+    <platform>all</platform>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+  </extension>
 </addon>
 
 <addon id="script.wadeysay" name="wadeysay" version="00.11-alpha" provider-name="iCR8IONS LLC www.icr8ions.com">
