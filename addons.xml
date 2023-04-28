@@ -449,6 +449,28 @@ plugin.video.favourites
 	</extension>
 </addon>
 
+<addon id="script.module.dnspython"
+       name="DNS Python"
+	   version="1.12.1"
+	   provider-name="dnspython">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+	<summary>A Pure Python DNS module</summary>
+	<description>A Pure Python DNS module</description>
+	<disclaimer lang="en"></disclaimer>
+	<language>en</language>
+    <platform>all</platform>
+	<license>BSD-style license</license>
+	<forum></forum>
+	<website>http://www.dnspython.org/</website>
+	<email></email>
+	<source>https://github.com/Arias800/script.module.dnspython/</source>
+  </extension>
+</addon>
+
 <addon id="script.module.parrot" name="Parrot Utils" version="111.1.0" provider-name="Parrot Developers">
   <requires>
     <import addon="script.module.requests" version="2.18.4"/>
