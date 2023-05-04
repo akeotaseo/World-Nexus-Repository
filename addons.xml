@@ -24,7 +24,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.program.downloader19" name="[B][COLOR orange]World Updater - Tools[/COLOR][/B]" version="20.1.0f" provider-name="TechNEWSology">
+<addon id="plugin.program.downloader19" name="[B][COLOR orange]World Updater - Tools[/COLOR][/B]" version="20.1.0h" provider-name="TechNEWSology">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 
@@ -155,6 +155,66 @@ plugin.video.favourites
     <fanart>fanart.jpg</fanart>
   </assets>
 </extension>
+</addon>
+
+<addon id="repository.deAIO" name="deAIO Unofficial" version="1.0.3" provider-name="Loki1979|HSK-DE|Collabsvito|[COLORdeepskyblue]K.U.S Team[/COLOR]|Kodinerds|Michaz|xStream">
+    <extension point="xbmc.addon.repository" name="HSK CREW,HSK FOREVER,K.U.S Team,Collabsvito,Kodinerds,Michaz,xStream">
+	   <dir>
+		<info compressed="false">https://hsk.kodiman.net/hsk/hsk_privat/hsk.crew.repo/addons.xml</info>
+		<checksum>https://hsk.kodiman.net/hsk/hsk_privat/hsk.crew.repo/addons.xml.md5</checksum>
+		<datadir zip="true">https://hsk.kodiman.net/hsk/hsk_privat/hsk.crew.repo</datadir>
+		<hashes>false</hashes>
+	   </dir>
+	<dir>
+		<info compressed="false">https://hsk.kodiman.net/hsk/hsk_privat/HSK_FOREVER_repo/addons.xml</info>
+		<checksum>https://hsk.kodiman.net/hsk/hsk_privat/HSK_FOREVER_repo/addons.xml.md5</checksum>
+		<datadir zip="true">https://hsk.kodiman.net/hsk/hsk_privat/HSK_FOREVER_repo</datadir>
+		<hashes>false</hashes>
+	</dir>
+        <dir >
+            <info compressed="true">https://kodi-unlimited-support.de/repo/data/addons.xml</info>
+            <checksum>https://kodi-unlimited-support.de/repo/data/addons.xml.md5</checksum>
+            <datadir zip="true">https://kodi-unlimited-support.de/repo/data</datadir>
+            <hashes>false</hashes>
+        </dir>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/Collabsvito/REpo-AiO/master/REPOSITORIES/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/Collabsvito/REpo-AiO/master/REPOSITORIES/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/Collabsvito/REpo-AiO/master/REPOSITORIES/</datadir>
+			<hashes>false</hashes>
+		</dir>
+    <dir>
+      <info compressed="false">https://raw.githubusercontent.com/michaz1988/repo/master/addons.xml</info>
+      <checksum>https://raw.githubusercontent.com/michaz1988/repo/master/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.githubusercontent.com/michaz1988/repo/master/</datadir>
+    </dir>
+        <dir >
+            <info compressed="false">https://raw.githubusercontent.com/streamxstream/xStreamRepo/master/nexus/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/streamxstream/xStreamRepo/master/nexus/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/streamxstream/xStreamRepo/master/nexus/</datadir>
+        </dir>
+        <dir>
+            <info compressed="true">https://repo.kodinerds.net/addons/addons.xml</info>
+            <checksum>https://repo.kodinerds.net/addons/addons.xml.md5</checksum>
+            <datadir zip="true">https://repo.kodinerds.net/addons</datadir>
+            <hashes>false</hashes>
+        </dir>
+	</extension>
+    <extension point="xbmc.addon.metadata">
+        <summary >HSK CREW,HSK FOREVER,K.U.S Team,Collabsvito,Kodinerds,Michaz,xStream (Repository Unofficial)</summary>
+	<description>HSK CREW,HSK FOREVER,K.U.S Team,Collabsvito,Kodinerds,Michaz,xStream (Repository Unofficial)</description>
+        <platform>all</platform>
+	<license></license>
+	<forum></forum>
+	<website></website>
+	<email></email>
+	<source></source>
+	<news></news>
+    <assets>
+		<icon>icon.png</icon>
+		<fanart>fanart.jpg</fanart>
+	</assets>
+    </extension>
 </addon>
 
 <addon id="repository.GMan" name="G-Man Repository Unofficial" version="0.1.2a" provider-name="World">
