@@ -24,7 +24,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.program.downloader19" name="[B][COLOR orange]World Updater - Tools[/COLOR][/B]" version="20.1.0h" provider-name="TechNEWSology">
+<addon id="plugin.program.downloader19" name="[B][COLOR orange]World Updater - Tools[/COLOR][/B]" version="20.1.0" provider-name="TechNEWSology">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 
@@ -346,31 +346,6 @@ plugin.video.favourites
         <summary>Repository for various of my add-ons</summary>
         <description>Repository for various of my add-ons</description>
         <platform>all</platform>
-    </extension>
-</addon>
-
-<addon id="repository.unofficialE" name="[B][COLOR Yellow]Unofficial[/COLOR] [COLOR blue]Elementum[/COLOR] [COLOR white]Repository[/COLOR][/B]" version="1.0.0" provider-name="Unofficial">
-    <requires>
-        <import addon="xbmc.addon" version="12.0.0"/>
-    </requires>
-    <extension point="xbmc.addon.repository" name="[B][COLOR Yellow]Unofficial[/COLOR] [COLOR blue]Elementum[/COLOR] [COLOR white]Repository[/COLOR][/B]">
-        <dir>
-            <info compressed="false">https://github.com/Kpoodle/Elementum/raw/master/zips/addons.xml</info>
-            <checksum>https://github.com/Kpoodle/Elementum/raw/master/zips/addons.xml.md5</checksum>
-            <datadir zip="true">https://github.com/Kpoodle/Elementum/raw/master/zips/</datadir>
-        </dir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>Unofficial Addons for Kodi</summary>>
-        <description lang="en">Kodi is a registered trademark of the XBMC Foundation. We are not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</description>
-        <disclaimer lang="en">The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
-		<forum></forum>
-        <platform>all</platform>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.png</fanart>
-        </assets>
-        <news></news>
     </extension>
 </addon>
 
