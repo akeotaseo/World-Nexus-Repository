@@ -552,16 +552,16 @@ NOTE: use Keymap Editor to map desired input or edit keymap file (fullscreenvide
 <addon
   id="skin.20NexusWorld"
   version="4.2.0"
-  name="skin.20NexusWorld-beta"
+  name="skin20NexusWorld-beta"
   provider-name="Helly,bsoriano">
   <requires>
-    <import addon="xbmc.gui" version="5.15.0"/>
+    <import addon="xbmc.gui" version="5.16.0"/>
     <import addon="script.favourites" version="8.1.2"/>
   </requires>
   <extension
     point="xbmc.gui.skin"
     debugging="flase"
-    effectslowdown="1.0">
+    effectslowdown="0.75">
     <res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
   </extension>
   <extension point="xbmc.addon.metadata">
