@@ -24,7 +24,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.program.downloader19" name="[B][COLOR orange]World Updater - Tools[/COLOR][/B]" version="20.1.1b" provider-name="TechNEWSology">
+<addon id="plugin.program.downloader19" name="[B][COLOR orange]World Updater - Tools[/COLOR][/B]" version="20.1.1w" provider-name="TechNEWSology">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 
@@ -506,7 +506,7 @@ plugin.video.favourites
   </extension>
 </addon>
 
-<addon id="script.module.parrot" name="Parrot Utils" version="1.2.6" provider-name="Parrot Developers">
+<addon id="script.module.parrot" name="Parrot Utils" version="1.2.7" provider-name="Parrot Developers">
   <requires>
     <import addon="script.module.requests"/>
   </requires>
