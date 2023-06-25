@@ -24,7 +24,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.program.downloader19" name="[B][COLOR orange]World Updater - Tools[/COLOR][/B]" version="20.1.1w" provider-name="TechNEWSology">
+<addon id="plugin.program.downloader19" name="[B][COLOR orange]World Updater - Tools[/COLOR][/B]" version="20.1.2" provider-name="TechNEWSology">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 
@@ -157,7 +157,7 @@ plugin.video.favourites
 </extension>
 </addon>
 
-<addon id="repository.deAIO" name="deAIO Unofficial" version="1.0.3" provider-name="Loki1979|HSK-DE|Collabsvito|[COLORdeepskyblue]K.U.S Team[/COLOR]|Kodinerds|Michaz|xStream">
+<addon id="repository.deAIO" name="deAIO Unofficial" version="1.0.4" provider-name="Loki1979|HSK-DE|Collabsvito|[COLORdeepskyblue]K.U.S Team[/COLOR]|Kodinerds|Michaz|xStream">
     <extension point="xbmc.addon.repository" name="HSK CREW,HSK FOREVER,K.U.S Team,Collabsvito,Kodinerds,Michaz,xStream">
 	   <dir>
 		<info compressed="false">https://hsk.kodiman.net/hsk/hsk_privat/hsk.crew.repo/addons.xml</info>
@@ -184,9 +184,9 @@ plugin.video.favourites
 			<hashes>false</hashes>
 		</dir>
     <dir>
-      <info compressed="false">https://raw.githubusercontent.com/michaz1988/repo/master/addons.xml</info>
-      <checksum>https://raw.githubusercontent.com/michaz1988/repo/master/addons.xml.md5</checksum>
-      <datadir zip="true">https://raw.githubusercontent.com/michaz1988/repo/master/</datadir>
+      <info compressed="false">https://michaz1988.github.io/repo/addons.xml</info>
+      <checksum>https://michaz1988.github.io/repo/addons.xml.md5</checksum>
+      <datadir zip="true">https://michaz1988.github.io/repo/</datadir>
     </dir>
         <dir >
             <info compressed="false">https://raw.githubusercontent.com/streamxstream/xStreamRepo/master/nexus/addons.xml</info>
@@ -549,14 +549,35 @@ NOTE: use Keymap Editor to map desired input or edit keymap file (fullscreenvide
    </extension>
 </addon>
 
+<addon id="service.autohideosd" name="Autohide OSD Service" version="1.0.0" provider-name="Clement Osumo">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+	</requires>
+	<extension point="xbmc.service" library="autoexec.py">
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">Hide Kodi OSD</summary>
+		<description lang="en_GB">The service will automatically hide Kodi OSD after a few seconds</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE Version 2</license>
+	</extension>
+</addon>
+
 <addon
   id="skin.20NexusWorld"
   version="4.2.0"
-  name="skin20NexusWorld-beta"
+  name="skin.19MatrixWorld-beta"
   provider-name="Helly,bsoriano">
   <requires>
     <import addon="xbmc.gui" version="5.16.0"/>
     <import addon="script.favourites" version="8.1.2"/>
+    <import addon="plugin.image.World" version="19.0.9"/>
+    <import addon="plugin.program.autowidget" version="19.0.0"/>
+    <import addon="plugin.program.mypreferences" version="19.0.1"/>
+    <import addon="plugin.program.simple.favourites" version="0.1.19"/>
+    <import addon="plugin.video.favourites" version="0.0.31"/>
+    <import addon="service.World.Build" version="20.0.19"/>
+    <import addon="plugin.program.downloader19" version="20.1.1"/>
   </requires>
   <extension
     point="xbmc.gui.skin"
