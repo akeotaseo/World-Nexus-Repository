@@ -217,8 +217,13 @@ plugin.video.favourites
     </extension>
 </addon>
 
-<addon id="repository.GMan" name="G-Man Repository Unofficial" version="0.1.2a" provider-name="World">
+<addon id="repository.GMan" name="G-Man Repository Unofficial" version="0.1.3" provider-name="World">
 	<extension point="xbmc.addon.repository" name="Git Mix Repository">
+    <dir>
+        <info compressed="false">https://github.com/mrgsi/repository.alpha.yt/raw/master/addons.xml</info>
+        <checksum>https://github.com/mrgsi/repository.alpha.yt/raw/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/mrgsi/repository.alpha.yt/master/</datadir>
+    </dir>
     <dir>
         <info compressed="false">https://github.com/mrgsi/repository.allanime/raw/master/addons.xml</info>
         <checksum>https://github.com/mrgsi/repository.allanime/raw/master/addons.xml.md5</checksum>
@@ -266,6 +271,12 @@ plugin.video.favourites
         <info compressed="false">https://raw.githubusercontent.com/mrgsi/repository.gscribe/master/addons.xml</info>       <checksum>https://raw.githubusercontent.com/mrgsi/repository.gscribe/master/addons.xml.md5</checksum>
         <datadir zip="true">https://raw.githubusercontent.com/mrgsi/repository.gscribe/master/</datadir>
     </dir>
+    <dir>
+		<info>https://raw.github.com/pkscout/repository.skins.pkscout/nexus/addons.xml</info>
+		<checksum>https://raw.github.com/pkscout/repository.skins.pkscout/nexus/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.github.com/pkscout/repository.skins.pkscout/nexus/download</datadir>
+		<artdir>https://raw.github.com/pkscout/repository.skins.pkscout/nexus/download</artdir>
+	</dir>
 			<dir>
 				<info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
 				<checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
