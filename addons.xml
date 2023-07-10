@@ -157,9 +157,15 @@ plugin.video.favourites
 </extension>
 </addon>
 
-<addon id="repository.deAIO" name="deAIO Unofficial" version="1.0.4" provider-name="Loki1979|HSK-DE|Collabsvito|[COLORdeepskyblue]K.U.S Team[/COLOR]|Kodinerds|Michaz|xStream">
+<addon id="repository.deAIO" name="deAIO Unofficial" version="1.0.5" provider-name="Loki1979|HSK-DE|Collabsvito|[COLORdeepskyblue]K.U.S Team[/COLOR]|Kodinerds|Michaz|xStream">
     <extension point="xbmc.addon.repository" name="HSK CREW,HSK FOREVER,K.U.S Team,Collabsvito,Kodinerds,Michaz,xStream">
 	   <dir>
+		<info compressed="false">https://hsk.kodiman.net/hsk/hsk_privat/hsk.crew.repo/addons.xml</info>
+		<checksum>https://hsk.kodiman.net/hsk/hsk_privat/hsk.crew.repo/addons.xml.md5</checksum>
+		<datadir zip="true">https://hsk.kodiman.net/hsk/hsk_privat/hsk.crew.repo</datadir>
+		<hashes>false</hashes>
+	   </dir>
+	   <dir minversion="20.0.0">
 		<info compressed="false">https://hsk.kodiman.net/hsk/hsk_privat/hsk.crew.repo/addons.xml</info>
 		<checksum>https://hsk.kodiman.net/hsk/hsk_privat/hsk.crew.repo/addons.xml.md5</checksum>
 		<datadir zip="true">https://hsk.kodiman.net/hsk/hsk_privat/hsk.crew.repo</datadir>
@@ -171,12 +177,24 @@ plugin.video.favourites
 		<datadir zip="true">https://hsk.kodiman.net/hsk/hsk_privat/HSK_FOREVER_repo</datadir>
 		<hashes>false</hashes>
 	</dir>
+	<dir minversion="20.0.0">
+		<info compressed="false">https://hsk.kodiman.net/hsk/hsk_privat/HSK_FOREVER_repo/addons.xml</info>
+		<checksum>https://hsk.kodiman.net/hsk/hsk_privat/HSK_FOREVER_repo/addons.xml.md5</checksum>
+		<datadir zip="true">https://hsk.kodiman.net/hsk/hsk_privat/HSK_FOREVER_repo</datadir>
+		<hashes>false</hashes>
+	</dir>
         <dir >
             <info compressed="true">https://kodi-unlimited-support.de/repo/data/addons.xml</info>
             <checksum>https://kodi-unlimited-support.de/repo/data/addons.xml.md5</checksum>
             <datadir zip="true">https://kodi-unlimited-support.de/repo/data</datadir>
             <hashes>false</hashes>
         </dir>
+		<dir minversion="18.9.9">
+			<info compressed="false">https://raw.githubusercontent.com/Collabsvito/REpo-AiO/master/MATRIX/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/Collabsvito/REpo-AiO/master/MATRIX/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/Collabsvito/REpo-AiO/master/MATRIX/</datadir>
+			<hashes>false</hashes>
+		</dir>
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/Collabsvito/REpo-AiO/master/REPOSITORIES/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/Collabsvito/REpo-AiO/master/REPOSITORIES/addons.xml.md5</checksum>
@@ -188,15 +206,38 @@ plugin.video.favourites
       <checksum>https://michaz1988.github.io/repo/addons.xml.md5</checksum>
       <datadir zip="true">https://michaz1988.github.io/repo/</datadir>
     </dir>
-        <dir >
-            <info compressed="false">https://raw.githubusercontent.com/streamxstream/xStreamRepo/master/nexus/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/streamxstream/xStreamRepo/master/nexus/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/streamxstream/xStreamRepo/master/nexus/</datadir>
-        </dir>
+		<dir minversion="18.9.701" maxversion="19.9.700">
+			<info compressed="false">https://raw.githubusercontent.com/streamxstream/xStreamRepo/master/matrix/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/streamxstream/xStreamRepo/master/matrix/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/streamxstream/xStreamRepo/master/matrix/</datadir>
+		</dir>
+		<dir minversion="19.9.701">
+			<info compressed="false">https://raw.githubusercontent.com/streamxstream/xStreamRepo/master/nexus/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/streamxstream/xStreamRepo/master/nexus/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/streamxstream/xStreamRepo/master/nexus/</datadir>
+		</dir>
         <dir>
             <info compressed="true">https://repo.kodinerds.net/addons/addons.xml</info>
             <checksum>https://repo.kodinerds.net/addons/addons.xml.md5</checksum>
             <datadir zip="true">https://repo.kodinerds.net/addons</datadir>
+            <hashes>false</hashes>
+        </dir>
+        <dir minversion="19.0.0" maxversion="21.9.0">
+            <info compressed="true">https://repo.kodinerds.net/addons/matrix/addons.xml</info>
+            <checksum>https://repo.kodinerds.net/addons/matrix/addons.xml.md5</checksum>
+            <datadir zip="true">https://repo.kodinerds.net/addons/matrix/zip/</datadir>
+            <hashes>false</hashes>
+        </dir>
+        <dir minversion="20.0.0" maxversion="21.9.0">
+            <info compressed="true">https://repo.kodinerds.net/addons/nexus/addons.xml</info>
+            <checksum>https://repo.kodinerds.net/addons/nexus/addons.xml.md5</checksum>
+            <datadir zip="true">https://repo.kodinerds.net/addons/nexus/zip/</datadir>
+            <hashes>false</hashes>
+        </dir>
+        <dir minversion="20.9.9" maxversion="21.9.0">
+            <info compressed="true">https://repo.kodinerds.net/addons/omega/addons.xml</info>
+            <checksum>https://repo.kodinerds.net/addons/omega/addons.xml.md5</checksum>
+            <datadir zip="true">https://repo.kodinerds.net/addons/omega/zip/</datadir>
             <hashes>false</hashes>
         </dir>
 	</extension>
@@ -516,6 +557,37 @@ plugin.video.favourites
 	<source>https://github.com/Arias800/script.module.dnspython/</source>
   </extension>
 </addon>
+
+<addon id="script.module.jetextractors" name="JetExtractors" version="2.0.74" provider-name="THE TEAM">
+	<requires>
+		<import addon="script.module.requests" />
+		<import addon="script.module.beautifulsoup4" />
+		<import addon="script.module.dateutil" />
+		<import addon="script.module.soupsieve" />
+		<import addon="script.module.pyairtable" />
+		<import addon="script.module.pyamf" />
+		<import addon="script.module.pycryptodome" optional="true" />
+		<import addon="script.module.pyjsparser" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Jet Extractors</summary>
+		<description lang="en">Jet Extractors</description>
+		<disclaimer lang="en"></disclaimer>
+		<license>MIT</license>
+		<assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
+<!-- ########################################### -->
+<!-- #     GIVE CREDIT WHERE CREDIT IS DUE     # -->
+<!-- #                                         # -->
+<!-- #      THE TEAM JETEXTRACTOR              # -->
+<!-- ########################################### -->
 
 <addon id="script.module.parrot" name="Parrot Utils" version="1.2.9" provider-name="Parrot Developers">
   <requires>
