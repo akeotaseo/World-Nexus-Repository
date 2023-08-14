@@ -24,7 +24,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.program.downloader19" name="[B][COLOR orange]World Updater - Tools[/COLOR][/B]" version="20.1.2" provider-name="TechNEWSology">
+<addon id="plugin.program.downloader19" name="[B][COLOR orange]World Updater - Tools[/COLOR][/B]" version="20.1.2a" provider-name="TechNEWSology">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 
@@ -79,31 +79,33 @@ plugin.video.favourites
 	</extension>
 </addon>
 
-<addon id="plugin.video.daddylive" name="Daddylive" version="2.2.2a" provider-name=" ">
+<addon id="plugin.video.daddylive" name="DaddyLive" version="3.0.1" provider-name="dEXE, THE CREW, mbebe">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
-        <import addon="script.module.requests" />
-        <import addon="script.module.inputstreamhelper" />
+        <import addon="script.module.requests"/>
+        <import addon="script.module.inputstreamhelper"/>
         <import addon="script.module.six"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="addon.py">
         <provides>video</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <description lang="pl">1.2</description>
-        <disclaimer lang="pl">test
-        </disclaimer>
-        <summary lang="en">Live TV and Sports</summary>
-        <description lang="en">Live TV and Sports</description>
-        <disclaimer lang="en">test
-        </disclaimer>
-        <language>pl</language>
+        <summary lang="en">DaddyLiveHD - Live TV and Sports</summary>
+        <description lang="en">Live Streamed Channels and Scheduled Sporting Events.[CR][CR]Multiple sources/streams works.</description>
+        <disclaimer lang="en">daddylivehd.com</disclaimer>
+        <language>en</language>
         <platform>all</platform>
         <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
         <website></website>
         <assets>
             <icon>icon.png</icon>
             <fanart>fanart.jpg</fanart>
+            <screenshot>resources/media/screenshot-01.jpg</screenshot>
+            <screenshot>resources/media/screenshot-02.jpg</screenshot>
+            <screenshot>resources/media/screenshot-03.jpg</screenshot>
+            <screenshot>resources/media/screenshot-04.jpg</screenshot>
+            <screenshot>resources/media/screenshot-05.jpg</screenshot>
+            <screenshot>resources/media/screenshot-06.jpg</screenshot>
         </assets>
     </extension>
 </addon>
@@ -246,32 +248,159 @@ plugin.video.favourites
 </extension>
 </addon>
 
-<addon id="repository.deAIO" name="deAIO Unofficial" version="1.0.5" provider-name="Loki1979|HSK-DE|Collabsvito|[COLORdeepskyblue]K.U.S Team[/COLOR]|Kodinerds|Michaz|xStream">
-    <extension point="xbmc.addon.repository" name="HSK CREW,HSK FOREVER,K.U.S Team,Collabsvito,Kodinerds,Michaz,xStream">
-	   <dir>
-		<info compressed="false">https://hsk.kodiman.net/hsk/hsk_privat/hsk.crew.repo/addons.xml</info>
-		<checksum>https://hsk.kodiman.net/hsk/hsk_privat/hsk.crew.repo/addons.xml.md5</checksum>
-		<datadir zip="true">https://hsk.kodiman.net/hsk/hsk_privat/hsk.crew.repo</datadir>
-		<hashes>false</hashes>
-	   </dir>
-	   <dir minversion="20.0.0">
-		<info compressed="false">https://hsk.kodiman.net/hsk/hsk_privat/hsk.crew.repo/addons.xml</info>
-		<checksum>https://hsk.kodiman.net/hsk/hsk_privat/hsk.crew.repo/addons.xml.md5</checksum>
-		<datadir zip="true">https://hsk.kodiman.net/hsk/hsk_privat/hsk.crew.repo</datadir>
-		<hashes>false</hashes>
-	   </dir>
+<addon id="repository.BrazAIO" name="BrazAIO Unofficial" version="1.1a" provider-name="Brazuca">
+<requires>
+<import addon="xbmc.addon" version="12.0.0"/>
+</requires>
+<extension point="xbmc.addon.repository" name="Brazuca Play Repository">
+<dir minversion="16.0.0" maxversion="18.9.0">
+<info compressed="false">https://raw.githubusercontent.com/skyrisk/brazucaplay/master/addons/repo/addons.xml</info>
+<checksum>https://raw.githubusercontent.com/skyrisk/brazucaplay/master/addons/repo/addons.xml.md5</checksum>
+<datadir zip="true">https://raw.githubusercontent.com/skyrisk/brazucaplay/master/addons/repo/Plugins/</datadir>
+<hashes>false</hashes>
+</dir>
+<dir minversion="18.9.1">
+<info compressed="false">https://raw.githubusercontent.com/skyrisk/brazucaplay/master/addons/repo/addons_matrix.xml</info>
+<checksum>https://raw.githubusercontent.com/skyrisk/brazucaplay/master/addons/repo/addons_matrix.xml.md5</checksum>
+<datadir zip="true">https://raw.githubusercontent.com/skyrisk/brazucaplay/master/addons/repo/Plugins/</datadir>
+<hashes>false</hashes>
+</dir>
+		<dir>
+    		<info compressed="false">https://github.com/Gujal00/smrzips/raw/master/addons.xml</info>
+    		<checksum>https://github.com/Gujal00/smrzips/raw/master/addons.xml.md5</checksum>
+    		<datadir zip="true">https://github.com/Gujal00/smrzips/raw/master/zips</datadir>
+			<hashes>false</hashes>
+		</dir>
+
+  		<dir minversion="17.0.0" maxversion="18.9.0">
+			<info compressed="false">https://repository.oneplayhd.com/leia/addons.xml</info>
+			<checksum>https://repository.oneplayhd.com/leia/addons.xml.md5</checksum>
+			<datadir zip="true">https://repository.oneplayhd.com/leia</datadir>
+			<hashes>false</hashes>
+    	</dir>
+
+  		<dir minversion="18.9.1">
+			<info compressed="false">https://repository.oneplayhd.com/matrix/addons.xml</info>
+			<checksum>https://repository.oneplayhd.com/matrix/addons.xml.md5</checksum>
+			<datadir zip="true">https://repository.oneplayhd.com/matrix</datadir>
+			<hashes>false</hashes>
+    	</dir>
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/7plusteam/7plus-neo.github.io/master/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/7plusteam/7plus-neo.github.io/master/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/7plusteam/7plus-neo.github.io/master/zips/</datadir>
+        </dir>
+      <dir>
+      <info compressed="true">https://raw.github.com/flixtx/flixrepo/master/addons.xml</info>
+      <checksum>https://raw.github.com/flixtx/flixrepo/master/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.github.com/flixtx/flixrepo/master</datadir>
+      <hashes>false</hashes>
+  </dir>
+  <dir minversion="19.0.0">
+      <info compressed="true">https://raw.github.com/flixtx/flixrepo/master/matrix/addons.xml</info>
+      <checksum>https://raw.github.com/flixtx/flixrepo/master/matrix/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.github.com/flixtx/flixrepo/master/matrix</datadir>
+      <hashes>false</hashes>
+  </dir>
+  <dir minversion="17.0.0" maxversion="18.9.0">
+      <info compressed="true">https://raw.github.com/flixtx/flixrepo/master/leia/addons.xml</info>
+      <checksum>https://raw.github.com/flixtx/flixrepo/master/leia/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.github.com/flixtx/flixrepo/master/leia</datadir>
+      <hashes>false</hashes>
+  </dir>
+      <dir>
+      <info compressed="true">https://raw.github.com/Kodiloucosbr/kodiloucosbr.github.io/master/addons.xml</info>
+      <checksum>https://raw.github.com/Kodiloucosbr/kodiloucosbr.github.io/master/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.github.com/Kodiloucosbr/kodiloucosbr.github.io/master</datadir>
+      <hashes>false</hashes>
+  </dir>
+      <dir>
+      <info compressed="true">https://raw.github.com/Kodiloucosbr/kodiloucosbr.github.io/master/addons.xml</info>
+      <checksum>https://raw.github.com/Kodiloucosbr/kodiloucosbr.github.io/master/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.github.com/Kodiloucosbr/kodiloucosbr.github.io/master</datadir>
+      <hashes>false</hashes>
+  </dir>
+  <dir minversion="17.0.0" maxversion="18.9.0">
+      <info compressed="true">https://raw.github.com/Kodiloucosbr/kodiloucosbr.github.io/master/leia/addons.xml</info>
+      <checksum>https://raw.github.com/Kodiloucosbr/kodiloucosbr.github.io/master/leia/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.github.com/Kodiloucosbr/kodiloucosbr.github.io/master/leia</datadir>
+      <hashes>false</hashes>
+  </dir>
 	<dir>
-		<info compressed="false">https://hsk.kodiman.net/hsk/hsk_privat/HSK_FOREVER_repo/addons.xml</info>
-		<checksum>https://hsk.kodiman.net/hsk/hsk_privat/HSK_FOREVER_repo/addons.xml.md5</checksum>
-		<datadir zip="true">https://hsk.kodiman.net/hsk/hsk_privat/HSK_FOREVER_repo</datadir>
-		<hashes>false</hashes>
-	</dir>
-	<dir minversion="20.0.0">
-		<info compressed="false">https://hsk.kodiman.net/hsk/hsk_privat/HSK_FOREVER_repo/addons.xml</info>
-		<checksum>https://hsk.kodiman.net/hsk/hsk_privat/HSK_FOREVER_repo/addons.xml.md5</checksum>
-		<datadir zip="true">https://hsk.kodiman.net/hsk/hsk_privat/HSK_FOREVER_repo</datadir>
-		<hashes>false</hashes>
-	</dir>
+			<info compressed="false">https://github.com/vikingskoditeam/vikingskoditeam.github.io/raw/master/addons.xml</info>
+			<checksum>https://github.com/vikingskoditeam/vikingskoditeam.github.io/raw/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/vikingskoditeam/vikingskoditeam.github.io/raw/master</datadir>
+			<hashes>false</hashes>
+    </dir>
+
+	<dir minversion="16.0.0" maxversion="18.9.0">
+			<info compressed="false">https://github.com/vikingskoditeam/vikingskoditeam.github.io/raw/master/leia/addons.xml</info>
+			<checksum>https://github.com/vikingskoditeam/vikingskoditeam.github.io/raw/master/leia/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/vikingskoditeam/vikingskoditeam.github.io/raw/master/leia</datadir>
+			<hashes>false</hashes>
+    </dir>
+
+   <dir minversion="18.9.1">
+			<info compressed="false">https://github.com/vikingskoditeam/vikingskoditeam.github.io/raw/master/matrix/addons.xml</info>
+			<checksum>https://github.com/vikingskoditeam/vikingskoditeam.github.io/raw/master/matrix/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/vikingskoditeam/vikingskoditeam.github.io/raw/master/matrix</datadir>
+			<hashes>false</hashes>
+    </dir>
+
+        <dir >
+            <info compressed="false">https://raw.githubusercontent.com/TakeOne-Team/TakeOneREPO/master/Omega/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/TakeOne-Team/TakeOneREPO/master/Omega/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/TakeOne-Team/TakeOneREPO/master/Omega/</datadir>
+        </dir>
+<dir>
+<info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+<checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+<datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+</dir>
+</extension>
+<extension point="xbmc.addon.metadata">
+<summary lang="pt_br"></summary>
+<description lang="pt_br"></description>
+<platform>all</platform>
+<assets>
+<icon>icon.png</icon>
+<fanart>fanart.jpg</fanart>
+<screenshot>resources/home.jpg</screenshot>
+<screenshot>resources/movies.jpg</screenshot>
+<screenshot>resources/series.jpg</screenshot>
+</assets>
+<news>BrazAIO Unofficial</news>
+<summary>BrazAIO Unofficial</summary>
+<description>BrazAIO Unofficial</description>
+<disclaimer>BrazAIO Unofficial</disclaimer>
+</extension>
+</addon>
+
+<addon id="repository.deAIO" name="deAIO Unofficial" version="1.0.6" provider-name="Loki1979|HSK-DE|Collabsvito|[COLORdeepskyblue]K.U.S Team[/COLOR]|Kodinerds|Michaz|xStream">
+    <extension point="xbmc.addon.repository" name="HSK CREW,HSK FOREVER,K.U.S Team,Collabsvito,Kodinerds,Michaz,xStream">
+		<dir>
+			<info compressed="false">https://hsk.kodiman.net/hsk/hsk_repos/hsk.crew.nexus.matrix.repo/addons.xml</info>
+			<checksum>https://hsk.kodiman.net/hsk/hsk_repos/hsk.crew.nexus.matrix.repo/addons.xml.md5</checksum>
+			<datadir zip="true">https://hsk.kodiman.net/hsk/hsk_repos/hsk.crew.nexus.matrix.repo/</datadir>
+			<hashes>false</hashes>
+		</dir>
+		<dir minversion="19.0.0" maxversion="21.9.0">
+			<info compressed="false">https://hsk.kodiman.net/hsk/hsk_repos/hsk.crew.nexus.matrix.repo/addons.xml</info>
+			<checksum>https://hsk.kodiman.net/hsk/hsk_repos/hsk.crew.nexus.matrix.repo/addons.xml.md5</checksum>
+			<datadir zip="true">https://hsk.kodiman.net/hsk/hsk_repos/hsk.crew.nexus.matrix.repo/</datadir>
+			<hashes>false</hashes>
+		</dir>
+		<dir minversion="20.9.9"  maxversion="21.9.0">
+			<info compressed="false">https://hsk.kodiman.net/hsk/hsk_repos/hsk.crew.nexus.matrix.repo/addons.xml</info>
+			<checksum>https://hsk.kodiman.net/hsk/hsk_repos/hsk.crew.nexus.matrix.repo/addons.xml.md5</checksum>
+			<datadir zip="true">https://hsk.kodiman.net/hsk/hsk_repos/hsk.crew.nexus.matrix.repo/</datadir>
+			<hashes>false</hashes>
+		</dir>
+    <dir>
+      <info compressed="false">https://michaz1988.github.io/repo/addons.xml</info>
+      <checksum>https://michaz1988.github.io/repo/addons.xml.md5</checksum>
+      <datadir zip="true">https://michaz1988.github.io/repo/</datadir>
+    </dir>
         <dir >
             <info compressed="true">https://kodi-unlimited-support.de/repo/data/addons.xml</info>
             <checksum>https://kodi-unlimited-support.de/repo/data/addons.xml.md5</checksum>
@@ -290,11 +419,6 @@ plugin.video.favourites
 			<datadir zip="true">https://raw.githubusercontent.com/Collabsvito/REpo-AiO/master/REPOSITORIES/</datadir>
 			<hashes>false</hashes>
 		</dir>
-    <dir>
-      <info compressed="false">https://michaz1988.github.io/repo/addons.xml</info>
-      <checksum>https://michaz1988.github.io/repo/addons.xml.md5</checksum>
-      <datadir zip="true">https://michaz1988.github.io/repo/</datadir>
-    </dir>
 		<dir minversion="18.9.701" maxversion="19.9.700">
 			<info compressed="false">https://raw.githubusercontent.com/streamxstream/xStreamRepo/master/matrix/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/streamxstream/xStreamRepo/master/matrix/addons.xml.md5</checksum>
