@@ -471,8 +471,13 @@ plugin.video.favourites
     </extension>
 </addon>
 
-<addon id="repository.GMan" name="G-Man Repository Unofficial" version="0.1.3" provider-name="World">
+<addon id="repository.GMan" name="G-Man Repository Unofficial" version="0.1.4" provider-name="World">
 	<extension point="xbmc.addon.repository" name="Git Mix Repository">
+    <dir>
+        <info compressed="false">https://github.com/mrgsi/repository.cartoonking/addons.xml</info>
+        <checksum>https://github.com/mrgsi/repository.cartoonking/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/mrgsi/repository.cartoonking/master/</datadir>
+    </dir>
     <dir>
         <info compressed="false">https://github.com/mrgsi/repository.alpha.yt/raw/master/addons.xml</info>
         <checksum>https://github.com/mrgsi/repository.alpha.yt/raw/master/addons.xml.md5</checksum>
