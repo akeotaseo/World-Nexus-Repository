@@ -24,7 +24,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.program.downloader19" name="[B][COLOR orange]World Updater - Tools[/COLOR][/B]" version="20.1.2a" provider-name="TechNEWSology">
+<addon id="plugin.program.downloader19" name="[B][COLOR orange]World Updater - Tools[/COLOR][/B]" version="20.1.9" provider-name="TechNEWSology /Gb-W">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 
@@ -79,33 +79,31 @@ plugin.video.favourites
 	</extension>
 </addon>
 
-<addon id="plugin.video.daddylive" name="DaddyLive" version="3.0.1" provider-name="dEXE, THE CREW, mbebe">
+<addon id="plugin.video.daddylive" name="Daddylive" version="2.5" provider-name="THE CREW">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
-        <import addon="script.module.requests"/>
-        <import addon="script.module.inputstreamhelper"/>
+        <import addon="script.module.requests" />
+        <import addon="script.module.inputstreamhelper" />
         <import addon="script.module.six"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="addon.py">
         <provides>video</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary lang="en">DaddyLiveHD - Live TV and Sports</summary>
-        <description lang="en">Live Streamed Channels and Scheduled Sporting Events.[CR][CR]Multiple sources/streams works.</description>
-        <disclaimer lang="en">daddylivehd.com</disclaimer>
-        <language>en</language>
+        <description lang="pl">1.2</description>
+        <disclaimer lang="pl">test
+        </disclaimer>
+        <summary lang="en">Live TV and Sports</summary>
+        <description lang="en">Live TV and Sports</description>
+        <disclaimer lang="en">test
+        </disclaimer>
+        <language>pl</language>
         <platform>all</platform>
         <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
         <website></website>
         <assets>
             <icon>icon.png</icon>
             <fanart>fanart.jpg</fanart>
-            <screenshot>resources/media/screenshot-01.jpg</screenshot>
-            <screenshot>resources/media/screenshot-02.jpg</screenshot>
-            <screenshot>resources/media/screenshot-03.jpg</screenshot>
-            <screenshot>resources/media/screenshot-04.jpg</screenshot>
-            <screenshot>resources/media/screenshot-05.jpg</screenshot>
-            <screenshot>resources/media/screenshot-06.jpg</screenshot>
         </assets>
     </extension>
 </addon>
@@ -248,11 +246,32 @@ plugin.video.favourites
 </extension>
 </addon>
 
-<addon id="repository.BrazAIO" name="BrazAIO Unofficial" version="1.1a" provider-name="Brazuca">
+<addon id="repository.BrazAIO" name="BrazAIO Unofficial" version="1.2" provider-name="Brazuca">
 <requires>
 <import addon="xbmc.addon" version="12.0.0"/>
 </requires>
 <extension point="xbmc.addon.repository" name="Brazuca Play Repository">
+	<dir minversion="16.0.0" maxversion="18.9.0">
+			<info compressed="false">https://github.com/vikingskoditeam/vikingskoditeam.github.io/raw/master/leia/addons.xml</info>
+			<checksum>https://github.com/vikingskoditeam/vikingskoditeam.github.io/raw/master/leia/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/vikingskoditeam/vikingskoditeam.github.io/raw/master/leia</datadir>
+			<hashes>false</hashes>
+    </dir>
+
+   <dir minversion="18.9.1">
+			<info compressed="false">https://github.com/vikingskoditeam/vikingskoditeam.github.io/raw/master/matrix/addons.xml</info>
+			<checksum>https://github.com/vikingskoditeam/vikingskoditeam.github.io/raw/master/matrix/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/vikingskoditeam/vikingskoditeam.github.io/raw/master/matrix</datadir>
+			<hashes>false</hashes>
+    </dir>
+
+   <dir minversion="19.0.0">
+			<info compressed="false">https://raw.githubusercontent.com/TakeOne-Team/REPOTakeOne/master/Omega/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/TakeOne-Team/REPOTakeOne/master/Omega/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/TakeOne-Team/REPOTakeOne/master/Omega</datadir>
+			<hashes>false</hashes>
+    </dir>
+
 <dir minversion="16.0.0" maxversion="18.9.0">
 <info compressed="false">https://raw.githubusercontent.com/skyrisk/brazucaplay/master/addons/repo/addons.xml</info>
 <checksum>https://raw.githubusercontent.com/skyrisk/brazucaplay/master/addons/repo/addons.xml.md5</checksum>
@@ -265,31 +284,24 @@ plugin.video.favourites
 <datadir zip="true">https://raw.githubusercontent.com/skyrisk/brazucaplay/master/addons/repo/Plugins/</datadir>
 <hashes>false</hashes>
 </dir>
-		<dir>
-    		<info compressed="false">https://github.com/Gujal00/smrzips/raw/master/addons.xml</info>
-    		<checksum>https://github.com/Gujal00/smrzips/raw/master/addons.xml.md5</checksum>
-    		<datadir zip="true">https://github.com/Gujal00/smrzips/raw/master/zips</datadir>
-			<hashes>false</hashes>
-		</dir>
-
-  		<dir minversion="17.0.0" maxversion="18.9.0">
-			<info compressed="false">https://repository.oneplayhd.com/leia/addons.xml</info>
-			<checksum>https://repository.oneplayhd.com/leia/addons.xml.md5</checksum>
-			<datadir zip="true">https://repository.oneplayhd.com/leia</datadir>
-			<hashes>false</hashes>
-    	</dir>
-
-  		<dir minversion="18.9.1">
-			<info compressed="false">https://repository.oneplayhd.com/matrix/addons.xml</info>
-			<checksum>https://repository.oneplayhd.com/matrix/addons.xml.md5</checksum>
-			<datadir zip="true">https://repository.oneplayhd.com/matrix</datadir>
-			<hashes>false</hashes>
-    	</dir>
-        <dir>
-            <info compressed="false">https://raw.githubusercontent.com/7plusteam/7plus-neo.github.io/master/zips/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/7plusteam/7plus-neo.github.io/master/zips/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/7plusteam/7plus-neo.github.io/master/zips/</datadir>
-        </dir>
+      <dir>
+      <info compressed="true">https://raw.github.com/Kodiloucosbr/kodiloucosbr.github.io/master/addons.xml</info>
+      <checksum>https://raw.github.com/Kodiloucosbr/kodiloucosbr.github.io/master/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.github.com/Kodiloucosbr/kodiloucosbr.github.io/master</datadir>
+      <hashes>false</hashes>
+  </dir>
+  <dir minversion="17.0.0" maxversion="18.9.0">
+      <info compressed="true">https://raw.github.com/Kodiloucosbr/kodiloucosbr.github.io/master/leia/addons.xml</info>
+      <checksum>https://raw.github.com/Kodiloucosbr/kodiloucosbr.github.io/master/leia/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.github.com/Kodiloucosbr/kodiloucosbr.github.io/master/leia</datadir>
+      <hashes>false</hashes>
+  </dir>
+  <dir minversion="19.0.0">
+      <info compressed="true">https://raw.github.com/Kodiloucosbr/kodiloucosbr.github.io/master/matrix/addons.xml</info>
+      <checksum>https://raw.github.com/Kodiloucosbr/kodiloucosbr.github.io/master/matrix/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.github.com/Kodiloucosbr/kodiloucosbr.github.io/master/matrix</datadir>
+      <hashes>false</hashes>
+  </dir>
       <dir>
       <info compressed="true">https://raw.github.com/flixtx/flixrepo/master/addons.xml</info>
       <checksum>https://raw.github.com/flixtx/flixrepo/master/addons.xml.md5</checksum>
@@ -308,49 +320,10 @@ plugin.video.favourites
       <datadir zip="true">https://raw.github.com/flixtx/flixrepo/master/leia</datadir>
       <hashes>false</hashes>
   </dir>
-      <dir>
-      <info compressed="true">https://raw.github.com/Kodiloucosbr/kodiloucosbr.github.io/master/addons.xml</info>
-      <checksum>https://raw.github.com/Kodiloucosbr/kodiloucosbr.github.io/master/addons.xml.md5</checksum>
-      <datadir zip="true">https://raw.github.com/Kodiloucosbr/kodiloucosbr.github.io/master</datadir>
-      <hashes>false</hashes>
-  </dir>
-      <dir>
-      <info compressed="true">https://raw.github.com/Kodiloucosbr/kodiloucosbr.github.io/master/addons.xml</info>
-      <checksum>https://raw.github.com/Kodiloucosbr/kodiloucosbr.github.io/master/addons.xml.md5</checksum>
-      <datadir zip="true">https://raw.github.com/Kodiloucosbr/kodiloucosbr.github.io/master</datadir>
-      <hashes>false</hashes>
-  </dir>
-  <dir minversion="17.0.0" maxversion="18.9.0">
-      <info compressed="true">https://raw.github.com/Kodiloucosbr/kodiloucosbr.github.io/master/leia/addons.xml</info>
-      <checksum>https://raw.github.com/Kodiloucosbr/kodiloucosbr.github.io/master/leia/addons.xml.md5</checksum>
-      <datadir zip="true">https://raw.github.com/Kodiloucosbr/kodiloucosbr.github.io/master/leia</datadir>
-      <hashes>false</hashes>
-  </dir>
-	<dir>
-			<info compressed="false">https://github.com/vikingskoditeam/vikingskoditeam.github.io/raw/master/addons.xml</info>
-			<checksum>https://github.com/vikingskoditeam/vikingskoditeam.github.io/raw/master/addons.xml.md5</checksum>
-			<datadir zip="true">https://github.com/vikingskoditeam/vikingskoditeam.github.io/raw/master</datadir>
-			<hashes>false</hashes>
-    </dir>
-
-	<dir minversion="16.0.0" maxversion="18.9.0">
-			<info compressed="false">https://github.com/vikingskoditeam/vikingskoditeam.github.io/raw/master/leia/addons.xml</info>
-			<checksum>https://github.com/vikingskoditeam/vikingskoditeam.github.io/raw/master/leia/addons.xml.md5</checksum>
-			<datadir zip="true">https://github.com/vikingskoditeam/vikingskoditeam.github.io/raw/master/leia</datadir>
-			<hashes>false</hashes>
-    </dir>
-
-   <dir minversion="18.9.1">
-			<info compressed="false">https://github.com/vikingskoditeam/vikingskoditeam.github.io/raw/master/matrix/addons.xml</info>
-			<checksum>https://github.com/vikingskoditeam/vikingskoditeam.github.io/raw/master/matrix/addons.xml.md5</checksum>
-			<datadir zip="true">https://github.com/vikingskoditeam/vikingskoditeam.github.io/raw/master/matrix</datadir>
-			<hashes>false</hashes>
-    </dir>
-
-        <dir >
-            <info compressed="false">https://raw.githubusercontent.com/TakeOne-Team/TakeOneREPO/master/Omega/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/TakeOne-Team/TakeOneREPO/master/Omega/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/TakeOne-Team/TakeOneREPO/master/Omega/</datadir>
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/7plusteam/7plus-neo.github.io/master/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/7plusteam/7plus-neo.github.io/master/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/7plusteam/7plus-neo.github.io/master/zips/</datadir>
         </dir>
 <dir>
 <info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
@@ -471,11 +444,11 @@ plugin.video.favourites
     </extension>
 </addon>
 
-<addon id="repository.GMan" name="G-Man Repository Unofficial" version="0.1.4" provider-name="World">
+<addon id="repository.GMan" name="G-Man Repository Unofficial" version="0.1.6" provider-name="World">
 	<extension point="xbmc.addon.repository" name="Git Mix Repository">
     <dir>
-        <info compressed="false">https://github.com/mrgsi/repository.cartoonking/addons.xml</info>
-        <checksum>https://github.com/mrgsi/repository.cartoonking/addons.xml.md5</checksum>
+        <info compressed="false">https://github.com/mrgsi/repository.cartoonking/raw/master/addons.xml</info>
+        <checksum>https://github.com/mrgsi/repository.cartoonking/raw/master/addons.xml.md5</checksum>
         <datadir zip="true">https://raw.githubusercontent.com/mrgsi/repository.cartoonking/master/</datadir>
     </dir>
     <dir>
@@ -511,6 +484,10 @@ plugin.video.favourites
         <info compressed="false">https://github.com/mrgsi/repository.wnt2/raw/master/addons.xml</info>
         <checksum>https://github.com/mrgsi/repository.wnt2/raw/master/addons.xml.md5</checksum>
         <datadir zip="true">https://raw.githubusercontent.com/mrgsi/repository.wnt2/master/</datadir>
+    </dir>
+    <dir>
+        <info compressed="false">https://raw.githubusercontent.com/mrgsi/repository.jigsaw/master/addons.xml</info>       <checksum>https://raw.githubusercontent.com/mrgsi/repository.jigsaw/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/mrgsi/repository.jigsaw/master/</datadir>
     </dir>
     <dir>
         <info compressed="false">https://github.com/mrgsi/repository.freeg/raw/master/addons.xml</info>
@@ -881,7 +858,7 @@ NOTE: use Keymap Editor to map desired input or edit keymap file (fullscreenvide
 
 <addon
   id="skin.20NexusWorld"
-  version="4.2.0"
+  version="4.2.1"
   name="skin.19MatrixWorld-beta"
   provider-name="Helly,bsoriano">
   <requires>
