@@ -224,28 +224,6 @@ plugin.video.favourites
     </extension>
 </addon>
 
-<addon id="plugin.video.vidembed" version="1.1.4" name="[COLOR cyan]Vidembed[/COLOR].[COLOR yellow]io[/COLOR]" provider-name="[COLOR cyan]Parrot[/COLOR] [COLOR yellow]Developers[/COLOR]">
-<requires>
-  <import addon="xbmc.python" version="3.0.0"/>
-  <import addon="script.module.requests" version="2.25.1"/>
-  <import addon="script.module.beautifulsoup4" version="2.9.9"/>
-  <import addon="script.module.resolveurl" version="5.1.00"/>
-  <import addon="script.module.parrot" version="1.0.0"/>
-  <import addon="script.module.routing"/>
-</requires>
-<extension point="xbmc.python.pluginsource" library="addon.py">
-  <provides>video</provides>
-</extension>
-<extension point="xbmc.addon.metadata">
-  <summary>Watch movies and series from membed1.com</summary>
-  <disclaimer>I'm not affiliated with membed1.com</disclaimer>
-  <assets>
-    <icon>icon.jpg</icon>
-    <fanart>fanart.jpg</fanart>
-  </assets>
-</extension>
-</addon>
-
 <addon id="repository.BrazAIO" name="BrazAIO Unofficial" version="1.2" provider-name="Brazuca">
 <requires>
 <import addon="xbmc.addon" version="12.0.0"/>
@@ -819,21 +797,6 @@ plugin.video.favourites
 <!-- #                                         # -->
 <!-- #      THE TEAM JETEXTRACTOR              # -->
 <!-- ########################################### -->
-
-<addon id="script.module.parrot" name="Falcon Utils" version="1.3.5" provider-name="Parrot Developers">
-  <requires>
-    <import addon="script.module.requests"/>
-  </requires>
-  <extension point="xbmc.python.module" library="lib" />
-  <extension point="xbmc.addon.metadata">
-    <summary>Utilities for addons by Parrot Developers.</summary>
-    <description></description>
-    <platform>all</platform>
-    <assets>
-      <icon>icon.jpg</icon>
-    </assets>
-  </extension>
-</addon>
 
 <addon id="script.wadeysay" name="wadeysay" version="00.11-alpha" provider-name="iCR8IONS LLC www.icr8ions.com">
    <requires>
