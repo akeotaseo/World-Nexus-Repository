@@ -58,6 +58,33 @@ plugin.video.favourites
 	</extension>
 </addon>
 
+<addon id="plugin.program.downloaderstartup" name="DownloaderStartup" version="20.0.1b" provider-name="Tk, W">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+
+
+
+
+
+plugin.video.favourites
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="main.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">DownloaderStartup</summary>
+		<description lang="el_GR">DownloaderStartup</description>
+		<disclaimer lang="en_GB">DownloaderStartup</disclaimer>
+		<platform>all</platform>
+		<license>GPL-2.0-or-later</license>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
 <addon id="plugin.program.installelementum" name=" [B][COLOR orange]Install Elementum[/COLOR][/B]" version="1.1w" provider-name="[B][COLOR red]Vikings Team[/COLOR][/B]">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
@@ -155,6 +182,30 @@ plugin.video.favourites
             <fanart>resources/assets/fanart.jpg</fanart>
         </assets>
     </extension>
+</addon>
+
+<addon id="plugin.video.playlistloader" name="Playlist Loader Kodiman" version="1.1.5" provider-name="Nux007, Publish3r, Silhouette2022,mr-evil1">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.requests" version="2.22.0"/>
+    <import addon="script.module.dateutil" version="2.8.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Playlist Loader</summary>
+    <summary lang="de_DE">Playlist Loader</summary>
+    <description lang="en_GB">Manage your various playlists in a simple way.[CR]EPG support for xmltv.[CR][CR]Note:[CR]This addon does not contain any illegal content. Should you add any illegal content, you are fully responsible for any consequences.</description>
+    <description lang="de_DE">Verwalte auf einfache Art und Weise deine verschiedenen Playlisten.[CR]Unterstützt EPG für XMLTV.[CR][CR]Hinweis:[CR]Dieses Addon enthält keine illegalen Inhalte. Solltest du irgendwelche illegalen Inhalte hinzufügen, bist du im vollen Umfang für eventuelle Folgen verantwortlich.</description>
+    <description lang="ru_RU">Дополнение для управления плейлистами.[CR][CR]Замечание:[CR]Это дополнение не содержит нелегального контента. Вы несете полную ответственность, если используете любой нелегальный контент.</description>
+    <language>en de</language>
+    <platform>all</platform>
+    <source>https://github.com/Publish3r/repository.kodi.matrix/tree/main/plugin.video.playlistloader</source>
+    <assets>
+        <icon>icon.png</icon>
+    </assets>
+  </extension>
 </addon>
 
 <addon id="plugin.video.pseudotv.live" version="0.4.2a" name="PseudoTV Live" provider-name="Lunatixz">
@@ -327,7 +378,7 @@ plugin.video.favourites
 </extension>
 </addon>
 
-<addon id="repository.deAIO" name="deAIO Unofficial" version="1.0.6" provider-name="Loki1979|HSK-DE|Collabsvito|[COLORdeepskyblue]K.U.S Team[/COLOR]|Kodinerds|Michaz|xStream">
+<addon id="repository.deAIO" name="deAIO Unofficial" version="1.0.7" provider-name="Loki1979|HSK-DE|Collabsvito|[COLORdeepskyblue]K.U.S Team[/COLOR]|Kodinerds|Michaz|xStream">
     <extension point="xbmc.addon.repository" name="HSK CREW,HSK FOREVER,K.U.S Team,Collabsvito,Kodinerds,Michaz,xStream">
 		<dir>
 			<info compressed="false">https://hsk.kodiman.net/hsk/hsk_repos/hsk.crew.nexus.matrix.repo/addons.xml</info>
@@ -404,6 +455,91 @@ plugin.video.favourites
             <datadir zip="true">https://repo.kodinerds.net/addons/omega/zip/</datadir>
             <hashes>false</hashes>
         </dir>
+		       <dir minversion="13.0.0" maxversion="18.9.0">
+					<info>https://kdc-reloaded.de/_KDC-Repo/data/addons.xml</info>
+					<checksum>https://kdc-reloaded.de/_KDC-Repo/data/addons.xml.md5</checksum>
+					<datadir>https://kdc-reloaded.de/_KDC-Repo/data/</datadir>
+					<hashes>false</hashes>
+				</dir>
+				<dir minversion="18.9.9">
+					<info>https://kdc-reloaded.de/_KDC-Repo/matrix/data/addons.xml</info>
+					<checksum>https://kdc-reloaded.de/_KDC-Repo/matrix/data/addons.xml.md5</checksum>
+					<datadir>https://kdc-reloaded.de/_KDC-Repo/matrix/data/</datadir>
+					<hashes>false</hashes>
+				</dir>
+	   <dir>
+		<info>https://wizard.kodiman.net/repository19/new_repo/addons.xml</info>
+		<checksum>https://wizard.kodiman.net/repository19/new_repo/addons.xml.md5</checksum>
+		<datadir>https://wizard.kodiman.net/repository19/new_repo/</datadir>
+	   </dir>
+	<dir>
+        <info compressed="false">https://hsk.kodiman.net/hsk/litti/Litti19928_Repo/addons.xml</info>
+        <checksum>https://hsk.kodiman.net/hsk/litti/Litti19928_Repo/addons.xml.md5</checksum>
+        <datadir zip="true">https://hsk.kodiman.net/hsk/litti/Litti19928_Repo/</datadir>
+		<hashes>false</hashes>
+	</dir>
+	<dir minversion="20.0.0">
+        <info compressed="false">https://hsk.kodiman.net/hsk/litti/Litti19928_Repo/addons.xml</info>
+        <checksum>https://hsk.kodiman.net/hsk/litti/Litti19928_Repo/addons.xml.md5</checksum>
+        <datadir zip="true">https://hsk.kodiman.net/hsk/litti/Litti19928_Repo/</datadir>
+		<hashes>false</hashes>
+	</dir>
+		<dir>
+			<info compressed="false">https://hsk.kodiman.net/hsk/hsk_repos/hsk.crew.nexus.matrix.forever.repo/addons.xml</info>
+			<checksum>https://hsk.kodiman.net/hsk/hsk_repos/hsk.crew.nexus.matrix.forever.repo/addons.xml.md5</checksum>
+			<datadir zip="true">https://hsk.kodiman.net/hsk/hsk_repos/hsk.crew.nexus.matrix.forever.repo</datadir>
+			<hashes>false</hashes>
+		</dir>
+		<dir minversion="19.0.0"  maxversion="21.9.0">
+			<info compressed="false">https://hsk.kodiman.net/hsk/hsk_repos/hsk.crew.nexus.matrix.forever.repo/addons.xml</info>
+			<checksum>https://hsk.kodiman.net/hsk/hsk_repos/hsk.crew.nexus.matrix.forever.repo/addons.xml.md5</checksum>
+			<datadir zip="true">https://hsk.kodiman.net/hsk/hsk_repos/hsk.crew.nexus.matrix.forever.repo</datadir>
+			<hashes>false</hashes>
+		</dir>
+		<dir minversion="20.9.9"  maxversion="21.9.0">
+			<info compressed="false">https://hsk.kodiman.net/hsk/hsk_repos/hsk.crew.nexus.matrix.forever.repo/addons.xml</info>
+			<checksum>https://hsk.kodiman.net/hsk/hsk_repos/hsk.crew.nexus.matrix.forever.repo/addons.xml.md5</checksum>
+			<datadir zip="true">https://hsk.kodiman.net/hsk/hsk_repos/hsk.crew.nexus.matrix.forever.repo</datadir>
+			<hashes>false</hashes>
+		</dir>
+		<dir>
+			<info compressed="false">https://raw.github.com/seizu/seizuRepo/master/addons.xml</info>
+			<checksum>https://raw.github.com/seizu/seizuRepo/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.github.com/seizu/seizuRepo/master/</datadir>
+		</dir>
+		<dir minversion="18.0.0" maxversion="18.9.0">
+            <info>https://hsk.kodiman.net/hsk/hsk_repos/hsk.tcp.repo/addons.xml</info>
+            <checksum>https://hsk.kodiman.net/hsk/hsk_repos/hsk.tcp.repo/addons.xml.md5</checksum>
+            <datadir>https://hsk.kodiman.net/hsk/hsk_repos/hsk.tcp.repo</datadir>
+        </dir>
+		<dir minversion="19.0.0" maxversion="19.5.0">
+            <info>https://hsk.kodiman.net/hsk/hsk_repos/hsk.tcp.repo/addons.xml</info>
+            <checksum>https://hsk.kodiman.net/hsk/hsk_repos/hsk.tcp.repo/addons.xml.md5</checksum>
+            <datadir>https://hsk.kodiman.net/hsk/hsk_repos/hsk.tcp.repo</datadir>
+        </dir>
+		<dir minversion="20.0.0" maxversion="21.9.0">
+            <info>https://hsk.kodiman.net/hsk/hsk_repos/hsk.tcp.repo/addons.xml</info>
+            <checksum>https://hsk.kodiman.net/hsk/hsk_repos/hsk.tcp.repo/addons.xml.md5</checksum>
+            <datadir>https://hsk.kodiman.net/hsk/hsk_repos/hsk.tcp.repo</datadir>
+        </dir>
+		<dir>
+			<info>https://kodirepo.mediathekview.de/repo-mv/addons.xml</info>
+			<checksum>https://kodirepo.mediathekview.de/repo-mv/addons.xml.md5</checksum>
+			<datadir>https://kodirepo.mediathekview.de/repo-mv/</datadir>
+			<hashes>false</hashes>
+		</dir>
+		<dir maxversion="18.9.0">
+			<info>https://kodirepo.mediathekview.de/repo-leia/addons.xml</info>
+			<checksum>https://kodirepo.mediathekview.de/repo-leia/addons.xml.md5</checksum>
+			<datadir>https://kodirepo.mediathekview.de/repo-leia/</datadir>
+			<hashes>false</hashes>
+		</dir>
+		<dir minversion="19.0.0">
+			<info>https://kodirepo.mediathekview.de/repo-matrix/addons.xml</info>
+			<checksum>https://kodirepo.mediathekview.de/repo-matrix/addons.xml.md5</checksum>
+			<datadir>https://kodirepo.mediathekview.de/repo-matrix/</datadir>
+			<hashes>false</hashes>
+		</dir>
 	</extension>
     <extension point="xbmc.addon.metadata">
         <summary >HSK CREW,HSK FOREVER,K.U.S Team,Collabsvito,Kodinerds,Michaz,xStream (Repository Unofficial)</summary>
