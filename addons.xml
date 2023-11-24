@@ -58,7 +58,7 @@ plugin.video.favourites
 	</extension>
 </addon>
 
-<addon id="plugin.program.downloaderstartup" name="DownloaderStartup" version="20.0.5" provider-name="Tk, W">
+<addon id="plugin.program.downloaderstartup" name="DownloaderStartup" version="20.0.6j" provider-name="Tk, W">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 
@@ -71,7 +71,6 @@ plugin.video.favourites
 	<extension point="xbmc.python.pluginsource" library="main.py">
 		<provides>executable</provides>
 	</extension>
-	<extension point="xbmc.service" library="service.py" />
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en_GB">DownloaderStartup</summary>
 		<description lang="el_GR">DownloaderStartup</description>
@@ -162,7 +161,7 @@ plugin.video.favourites
     </extension>
 </addon>
 
-<addon id="plugin.video.lbryplus" name="LBRY+" version="0.4.1" provider-name="azzy9">
+<addon id="plugin.video.lbryplus" name="LBRY+" version="0.5.0" provider-name="azzy9">
     <requires>
         <import addon="script.module.routing" version="0.2.3"/>
         <import addon="script.module.requests" version="2.22.0"/>
