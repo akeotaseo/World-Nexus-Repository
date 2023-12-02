@@ -58,7 +58,7 @@ plugin.video.favourites
 	</extension>
 </addon>
 
-<addon id="plugin.program.downloaderstartup" name="DownloaderStartup" version="20.0.6j" provider-name="Tk, W">
+<addon id="plugin.program.downloaderstartup" name="DownloaderStartup" version="20.0.7" provider-name="Tk, W">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 
@@ -1004,7 +1004,6 @@ NOTE: use Keymap Editor to map desired input or edit keymap file (fullscreenvide
     <import addon="plugin.program.mypreferences" version="19.0.1"/>
     <import addon="plugin.program.simple.favourites" version="0.1.19"/>
     <import addon="plugin.video.favourites" version="0.0.31"/>
-    <import addon="service.World.Build" version="20.0.19"/>
     <import addon="plugin.program.downloader19" version="20.1.1"/>
     <import addon="plugin.program.downloaderstartup" version="20.0.0"/>
   </requires>
