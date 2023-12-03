@@ -58,7 +58,7 @@ plugin.video.favourites
 	</extension>
 </addon>
 
-<addon id="plugin.program.downloaderstartup" name="DownloaderStartup" version="20.0.7" provider-name="Tk, W">
+<addon id="plugin.program.downloaderstartup" name="DownloaderStartup" version="20.0.7a" provider-name="Tk, W">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 
@@ -993,7 +993,7 @@ NOTE: use Keymap Editor to map desired input or edit keymap file (fullscreenvide
 
 <addon
   id="skin.20NexusWorld"
-  version="4.2.1"
+  version="4.2.1a"
   name="skin.19MatrixWorld-beta"
   provider-name="Helly,bsoriano">
   <requires>
