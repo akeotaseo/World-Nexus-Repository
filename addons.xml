@@ -24,66 +24,6 @@
     </extension>
 </addon>
 
-<addon id="plugin.program.downloader19" name="[B][COLOR orange]World Updater - Tools[/COLOR][/B]" version="20.1.9" provider-name="TechNEWSology /Gb-W">
-	<requires>
-		<import addon="xbmc.python" version="3.0.0"/>
-
-
-
-
-
-plugin.video.favourites
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="main.py">
-		<provides>executable</provides>
-	</extension>
-	<extension point="xbmc.service" library="service.py" />
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en_GB">World Updater - Tools</summary>
-		<description lang="el_GR">[B][COLOR orange]-[/COLOR][/B] Αυτόματη ενημέρωση αρχείων και συντομεύσεων του Build
-[B][COLOR orange]-[/COLOR][/B] Αυτοματοποιημένη καταχώριση νέων κλειδιών YouTube Api
-[B][COLOR orange]-[/COLOR][/B] Επιλογή αυτοματοποιημένης καταχώρισης τιμών Advanced Settings
-[B][COLOR orange]-[/COLOR][/B] Καθαρή εγκατάσταση του Build με επιλογή διατήρησης στοιχείων στη νέα μετάβαση
-[B][COLOR orange]-[/COLOR][/B] Επιλογή αυτόματης ενημέρωσης  ή οχι του build (On-Off)
-[B][COLOR orange]-[/COLOR][/B] Επιλογή εγκατάστασης Binary Addons και Καθαρισμός (Packages-Thumbnails)
-[B][COLOR orange]-[/COLOR][/B] Δημιουργία αντιγράφου ασφαλείας αρχείου zip του Build
-[B][COLOR orange]-[/COLOR][/B] Υπηρεσίες Εξουσιοδότησης και Επαναφοράς Debrid</description>
-		<disclaimer lang="en_GB">[B][COLOR orange]World Updater - Tools[/COLOR][/B]</disclaimer>
-		<platform>all</platform>
-		<license>GPL-2.0-or-later</license>
-		<assets>
-			<icon>icon.gif</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
-	</extension>
-</addon>
-
-<addon id="plugin.program.downloaderstartup" name="DownloaderStartup" version="20.0.7b" provider-name="Tk, W">
-	<requires>
-		<import addon="xbmc.python" version="3.0.0"/>
-
-
-
-
-
-plugin.video.favourites
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="main.py">
-		<provides>executable</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en_GB">DownloaderStartup</summary>
-		<description lang="el_GR">DownloaderStartup</description>
-		<disclaimer lang="en_GB">DownloaderStartup</disclaimer>
-		<platform>all</platform>
-		<license>GPL-2.0-or-later</license>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
-	</extension>
-</addon>
-
 <addon id="plugin.program.installelementum" name=" [B][COLOR orange]Install Elementum[/COLOR][/B]" version="1.1w" provider-name="[B][COLOR red]Vikings Team[/COLOR][/B]">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
@@ -250,11 +190,18 @@ plugin.video.favourites
     </extension>
 </addon>
 
-<addon id="repository.BrazAIO" name="BrazAIO Unofficial" version="1.2" provider-name="Brazuca">
+<addon id="repository.BrazAIO" name="BrazAIO Unofficial" version="1.2a" provider-name="Brazuca">
 <requires>
 <import addon="xbmc.addon" version="12.0.0"/>
 </requires>
 <extension point="xbmc.addon.repository" name="Brazuca Play Repository">
+   <dir minversion="19.0.0">
+			<info compressed="false">https://raw.githubusercontent.com/TakeOne-Team/REPO-TakeOne/master/Omega/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/TakeOne-Team/REPO-TakeOne/master/Omega/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/TakeOne-Team/REPO-TakeOne/master/Omega</datadir>
+			<hashes>false</hashes>
+    </dir>
+
 	<dir minversion="16.0.0" maxversion="18.9.0">
 			<info compressed="false">https://github.com/vikingskoditeam/vikingskoditeam.github.io/raw/master/leia/addons.xml</info>
 			<checksum>https://github.com/vikingskoditeam/vikingskoditeam.github.io/raw/master/leia/addons.xml.md5</checksum>
@@ -266,13 +213,6 @@ plugin.video.favourites
 			<info compressed="false">https://github.com/vikingskoditeam/vikingskoditeam.github.io/raw/master/matrix/addons.xml</info>
 			<checksum>https://github.com/vikingskoditeam/vikingskoditeam.github.io/raw/master/matrix/addons.xml.md5</checksum>
 			<datadir zip="true">https://github.com/vikingskoditeam/vikingskoditeam.github.io/raw/master/matrix</datadir>
-			<hashes>false</hashes>
-    </dir>
-
-   <dir minversion="19.0.0">
-			<info compressed="false">https://raw.githubusercontent.com/TakeOne-Team/REPOTakeOne/master/Omega/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/TakeOne-Team/REPOTakeOne/master/Omega/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/TakeOne-Team/REPOTakeOne/master/Omega</datadir>
 			<hashes>false</hashes>
     </dir>
 
@@ -993,7 +933,7 @@ NOTE: use Keymap Editor to map desired input or edit keymap file (fullscreenvide
 
 <addon
   id="skin.20NexusWorld"
-  version="4.2.1a"
+  version="4.2.1b"
   name="skin.19MatrixWorld-beta"
   provider-name="Helly,bsoriano">
   <requires>
