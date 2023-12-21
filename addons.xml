@@ -801,6 +801,21 @@
 	</extension>
 </addon>
 
+<addon id="resource.uisounds.kodi" version="1.0.1" name="Kodi UI Sounds" provider-name="Team Kodi">
+  <requires>
+    <import addon="kodi.resource" version="1.0.0"/>
+  </requires>
+  <extension point="kodi.resource.uisounds"/>
+  <extension point="kodi.addon.metadata">
+    <summary lang="en">Kodi GUI sounds</summary>
+    <description lang="en">Kodi GUI sounds</description>
+    <platform>all</platform>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
 <addon id="script.frequency.switcherAmLogic2" name="script.frequency.switcherAmLogic 2" version="2.1.20" provider-name="pmos69">
   <requires>
         <trycatch>
@@ -833,6 +848,27 @@
             <icon>icon.png</icon>
             <fanart>fanart.jpg</fanart>
         </assets>
+  </extension>
+</addon>
+
+<addon id="script.module.cloudscraper" name="CloudScraper2" version="1.2.66" provider-name="venomous">
+  <requires>
+    <!-- <import addon="xbmc.python" version="3.0.0"/> -->
+    <import addon="script.module.requests" />
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.python.pluginsource" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_gb">cloudscraper</summary>
+    <description lang="en_gb">cloudscraper</description>
+    <disclaimer lang="en_gb"></disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license></license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
   </extension>
 </addon>
 
@@ -933,7 +969,7 @@ NOTE: use Keymap Editor to map desired input or edit keymap file (fullscreenvide
 
 <addon
   id="skin.20NexusWorld"
-  version="4.2.1b"
+  version="4.2.1d"
   name="skin.19MatrixWorld-beta"
   provider-name="Helly,bsoriano">
   <requires>
