@@ -45,7 +45,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.daddylive" name="Daddylive" version="2.5" provider-name="THE CREW">
+<addon id="plugin.video.daddylive" name="Daddylive" version="2.8" provider-name="THE CREW">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" />
@@ -293,7 +293,7 @@
 </extension>
 </addon>
 
-<addon id="repository.deAIO" name="deAIO Unofficial" version="1.0.7" provider-name="Loki1979|HSK-DE|Collabsvito|[COLORdeepskyblue]K.U.S Team[/COLOR]|Kodinerds|Michaz|xStream">
+<addon id="repository.deAIO" name="deAIO Unofficial" version="1.0.7a" provider-name="Loki1979|HSK-DE|Collabsvito|[COLORdeepskyblue]K.U.S Team[/COLOR]|Kodinerds|Michaz|xStream">
     <extension point="xbmc.addon.repository" name="HSK CREW,HSK FOREVER,K.U.S Team,Collabsvito,Kodinerds,Michaz,xStream">
 		<dir>
 			<info compressed="false">https://hsk.kodiman.net/hsk/hsk_repos/hsk.crew.nexus.matrix.repo/addons.xml</info>
@@ -346,6 +346,11 @@
 			<checksum>https://raw.githubusercontent.com/streamxstream/xStreamRepo/master/nexus/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/streamxstream/xStreamRepo/master/nexus/</datadir>
 		</dir>
+		<dir minversion="20.9.910" maxversion="21.9.700">
+            <info compressed="false">https://raw.githubusercontent.com/streamxstream/xStreamRepo/master/omega/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/streamxstream/xStreamRepo/master/omega/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/streamxstream/xStreamRepo/master/omega/</datadir>
+        </dir>
         <dir>
             <info compressed="true">https://repo.kodinerds.net/addons/addons.xml</info>
             <checksum>https://repo.kodinerds.net/addons/addons.xml.md5</checksum>
