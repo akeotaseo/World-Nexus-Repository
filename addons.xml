@@ -190,7 +190,7 @@
     </extension>
 </addon>
 
-<addon id="repository.BrazAIO" name="BrazAIO Unofficial" version="1.2a" provider-name="Brazuca">
+<addon id="repository.BrazAIO" name="BrazAIO Unofficial" version="1.2b" provider-name="Brazuca">
 <requires>
 <import addon="xbmc.addon" version="12.0.0"/>
 </requires>
@@ -268,6 +268,11 @@
             <info compressed="false">https://raw.githubusercontent.com/7plusteam/7plus-neo.github.io/master/zips/addons.xml</info>
             <checksum>https://raw.githubusercontent.com/7plusteam/7plus-neo.github.io/master/zips/addons.xml.md5</checksum>
             <datadir zip="true">https://raw.githubusercontent.com/7plusteam/7plus-neo.github.io/master/zips/</datadir>
+        </dir>
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/addon-rajada/addon-rajada.github.io/main/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/addon-rajada/addon-rajada.github.io/main/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/addon-rajada/addon-rajada.github.io/main/zips/</datadir>
         </dir>
 <dir>
 <info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
