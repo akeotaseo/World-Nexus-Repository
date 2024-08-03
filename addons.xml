@@ -189,7 +189,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.scrubsv2" version="5.1.40t" name="[COLOR orange]Scrubs v2[/COLOR]" provider-name="JewBMX">
+<addon id="plugin.video.scrubsv2" version="5.1.40t41" name="[COLOR orange]Scrubs v2[/COLOR]" provider-name="JewBMX">
     <requires>
         <import addon="script.module.six" />
         <import addon="script.module.kodi-six" />
@@ -209,13 +209,13 @@
         <summary lang="en">A Clean Source To Dirty Things...</summary>
         <description lang="en">Movies, Tv Shows, Anime, and What Not. [CR] See Changelog For Changes. [CR] You enable/disable the ones you dont like and let me handle the broken providers. [CR] How it should be :)</description>
         <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
-        <license>Free the People!, Free the World!!T</license>
+        <license>Free the People!, Free the World!!</license>
         <platform>all</platform>
         <assets>
             <icon>resources/images/icon.png</icon>
             <fanart>resources/images/fanart.jpg</fanart>
         </assets>
-        <news>Total CleanUp of Providers : Checked and Cleaned as of June 2023. [CR] Check ChangeLog For More Details.</news>
+        <news>Total CleanUp of Providers : Checked and Cleaned as of July 2024. [CR] Check ChangeLog For More Details.</news>
     </extension>
 </addon>
 
