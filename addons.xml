@@ -189,7 +189,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.scrubsv2" version="5.1.40t41" name="[COLOR orange]Scrubs v2[/COLOR]" provider-name="JewBMX">
+<addon id="plugin.video.scrubsv2" version="5.1.41w" name="[COLOR orange]Scrubs v2[/COLOR]" provider-name="JewBMX">
     <requires>
         <import addon="script.module.six" />
         <import addon="script.module.kodi-six" />
@@ -407,37 +407,6 @@
 		<disclaimer></disclaimer>
 		<platform>all</platform>
 	</extension>
-</addon>
-
-    <addon id="repository.twilight0" name="Twilight0 Addon Repository" version="1.7" provider-name="Twilight0">
-        <extension point="xbmc.addon.repository" name="Twilight0 Addon Repository">
-            <dir>
-                <info compressed="false">https://raw.githubusercontent.com/Twilight0/repository.twilight0/master/_zips/addons.xml</info>
-                <checksum>https://raw.githubusercontent.com/Twilight0/repository.twilight0/master/_zips/addons.xml.md5</checksum>
-                <datadir zip="true">https://raw.githubusercontent.com/Twilight0/repository.twilight0/master/_zips/</datadir>
-                <hashes>false</hashes>
-            </dir>
-            <dir>
-                <info compressed="false">https://raw.githubusercontent.com/Twilight0/repository.twilight0.libs/master/_zips/addons.xml</info>
-                <checksum>https://raw.githubusercontent.com/Twilight0/repository.twilight0.libs/master/_zips/addons.xml.md5</checksum>
-                <datadir zip="true">https://raw.githubusercontent.com/Twilight0/repository.twilight0.libs/master/_zips/</datadir>
-                <hashes>false</hashes>
-            </dir>
-			<dir>
-				<info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
-				<checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
-				<datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
-            </dir>
-        </extension>
-        <extension point="xbmc.addon.metadata">
-            <summary>Repository for various of my add-ons</summary>
-            <description>Repository for various of my add-ons</description>
-            <platform>all</platform>
-            <assets>
-                <icon>icon.png</icon>
-                <fanart>fanart.jpg</fanart>
-            </assets>
-        </extension>
 </addon>
 
 <addon id="repository.World" name="World Repository" version="0.1.3" provider-name="World">
