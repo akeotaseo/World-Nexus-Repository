@@ -219,6 +219,37 @@
     </extension>
 </addon>
 
+<addon id="plugin.video.vnmedia" name="VN Media" version="5.8.0" provider-name="Anonymous">
+<requires>
+  <import addon="xbmc.python" version="3.0.1"/>
+  <import addon="script.module.codequick" version="1.1.8"/>
+  <import addon="script.module.beautifulsoup4" version="1.12.0"/>
+  <import addon="script.module.cloudscraperkd" version="1.2.68"/>
+  <import addon="script.module.resolveurl" version="5.1.110"/>
+  <import addon="script.module.pycryptodome" version="3.4.3"/>
+  <import addon="inputstream.adaptive" version="20.0.0"/>
+  <import addon="plugin.video.youtube" version="0.0.1"/>
+</requires>
+<extension point="xbmc.python.pluginsource" library="mkendo.py">
+  <provides>video</provides>
+</extension>
+<extension point="xbmc.service" library="service.py"/>
+<extension point="xbmc.addon.metadata">
+  <reuselanguageinvoker>true</reuselanguageinvoker>
+  <summary lang="vi_VN">VN Media Omega</summary>
+  <description lang="vi_VN">Dữ liệu được máy tính thu thập tự động từ Internet</description>
+  <disclaimer lang="vi_VN">Dữ liệu được máy tính thu thập tự động từ Internet</disclaimer>
+  <platform>all</platform>
+  <language>vi</language>
+  <license>GPL-2.0-or-later</license>
+  <assets>
+    <icon>resources/icon.png</icon>
+    <fanart>resources/fanart.png</fanart>
+  </assets>
+  <news>Dữ liệu được máy tính thu thập tự động từ Internet</news>
+</extension>
+</addon>
+
 <addon id="repository.BrazAIO" name="BrazAIO Unofficial" version="1.2d" provider-name="Brazuca">
 <requires>
 <import addon="xbmc.addon" version="12.0.0"/>
@@ -619,6 +650,30 @@
   </extension>
 </addon>
 
+<addon id="script.module.codequick" name="CodeQuick" provider-name="willforde, mkendo" version="1.2.0">
+    <requires>
+        <import addon="xbmc.python" version="3.0.1"/>
+        <import addon="script.module.youtube.dl"/>
+        <import addon="script.module.htmlement"/>
+        <import addon="script.module.requests"/>
+		<import addon="script.module.infotagger"/>
+		<import addon="plugin.video.youtube"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib"/>
+    <extension point="xbmc.addon.metadata">
+	    <reuselanguageinvoker>true</reuselanguageinvoker>
+		<platform>all</platform>
+        <summary lang="en_GB">Framework for creating kodi add-on's.</summary>
+        <description lang="en_GB">Codequick is a framework for kodi add-on's. The goal of this framework is to simplify add-on development. This is achieved by reducing the amount of boilerplate code to a minimum, automating tasks like route dispatching and sort method selection. Ultimately allowing the developer to focus primarily on scraping content from websites and passing it to kodi.</description>
+        <license>GPL-3.0-or-later</license>
+        <source>https://github.com/willforde/script.module.codequick</source>
+        <platform>all</platform>
+        <assets>
+            <icon>resources/icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+
 <addon id="script.module.dnspython"
        name="DNS Python"
 	   version="1.12.1"
@@ -671,6 +726,27 @@
 <!-- #                                         # -->
 <!-- #      THE TEAM JETEXTRACTOR              # -->
 <!-- ########################################### -->
+
+<addon id="script.module.requests-toolbelt" name="Requests Toolbelt" version="1.0.0" provider-name="mkendo">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+	<import addon="script.module.requests" version="2.9.2"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.python.pluginsource" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_gb">requests-toolbelt</summary>
+    <description lang="en_gb">requests-toolbelt</description>
+    <disclaimer lang="en_gb"></disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license></license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
+  </extension>
+</addon>
 
 <addon id="script.wadeysay" name="wadeysay" version="00.11-alpha" provider-name="iCR8IONS LLC www.icr8ions.com">
    <requires>
