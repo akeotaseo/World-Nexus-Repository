@@ -650,28 +650,27 @@
   </extension>
 </addon>
 
-<addon id="script.module.codequick" name="CodeQuick" provider-name="willforde, mkendo" version="1.2.0">
-    <requires>
-        <import addon="xbmc.python" version="3.0.1"/>
-        <import addon="script.module.youtube.dl"/>
-        <import addon="script.module.htmlement"/>
-        <import addon="script.module.requests"/>
-		<import addon="script.module.infotagger"/>
-		<import addon="plugin.video.youtube"/>
-    </requires>
-    <extension point="xbmc.python.module" library="lib"/>
-    <extension point="xbmc.addon.metadata">
-	    <reuselanguageinvoker>true</reuselanguageinvoker>
-		<platform>all</platform>
-        <summary lang="en_GB">Framework for creating kodi add-on's.</summary>
-        <description lang="en_GB">Codequick is a framework for kodi add-on's. The goal of this framework is to simplify add-on development. This is achieved by reducing the amount of boilerplate code to a minimum, automating tasks like route dispatching and sort method selection. Ultimately allowing the developer to focus primarily on scraping content from websites and passing it to kodi.</description>
-        <license>GPL-3.0-or-later</license>
-        <source>https://github.com/willforde/script.module.codequick</source>
-        <platform>all</platform>
-        <assets>
-            <icon>resources/icon.png</icon>
-        </assets>
-    </extension>
+<addon id="script.module.cloudscraperkd" name="CloudScraper KODI" version="1.2.71" provider-name="mkendo">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.requests" version="2.9.2"/>
+	<import addon="script.module.requests-toolbelt" version="0.9.1"/>
+	<import addon="script.module.pyparsing" version="2.4.7"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.python.pluginsource" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_gb">cloudscraper</summary>
+    <description lang="en_gb">cloudscraper</description>
+    <disclaimer lang="en_gb"></disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license></license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
+  </extension>
 </addon>
 
 <addon id="script.module.dnspython"
