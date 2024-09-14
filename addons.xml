@@ -100,28 +100,6 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.lbryplus" name="LBRY+" version="0.5.0" provider-name="azzy9">
-    <requires>
-        <import addon="script.module.routing" version="0.2.3"/>
-        <import addon="script.module.requests" version="2.22.0"/>
-		<import addon="script.module.six"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="lbry.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en_GB">Plugin for LBRY and Odysee</summary>
-        <description lang="en_GB">LBRY is a secure, open, and community-run digital marketplace</description>
-        <platform>all</platform>
-        <license>GPL-2.0-or-later</license>
-        <source>https://github.com/azzy9/plugin.video.lbryplus</source>
-        <assets>
-            <icon>resources/assets/256x256.png</icon>
-            <fanart>resources/assets/fanart.jpg</fanart>
-        </assets>
-    </extension>
-</addon>
-
 <addon id="plugin.video.pseudotv.live" version="0.4.2a" name="PseudoTV Live" provider-name="Lunatixz">
     <requires>
         <import addon="xbmc.python" version="3.0.1"/>
