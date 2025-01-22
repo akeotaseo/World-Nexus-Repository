@@ -195,7 +195,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.vnmedia" name="VN Media" version="5.8.0a" provider-name="mkendo">
+<addon id="plugin.video.vnmedia" name="VN Media" version="5.8.0b" provider-name="mkendo">
 <requires>
   <import addon="xbmc.python" version="3.0.1"/>
   <import addon="script.module.codequick" version="1.1.8"/>
