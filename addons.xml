@@ -238,6 +238,23 @@ Chúng tôi không sở hữu, không lưu trữ nội dung này và sẽ không
 </extension>
 </addon>
 
+<addon id="plugin.video.ytlite" name="YouTube LITE" version="1.0.6" provider-name="mrfixit2001">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Search and Bookmark YouTube Videos</summary>
+    <description lang="en">Search and Bookmark YouTube Videos</description>
+    <platform>all</platform>
+    <assets>
+        <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
 <addon id="repository.BrazAIO" name="BrazAIO Unofficial" version="1.2c" provider-name="Brazuca">
 <requires>
 <import addon="xbmc.addon" version="12.0.0"/>
