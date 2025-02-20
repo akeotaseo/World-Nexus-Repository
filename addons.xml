@@ -24,6 +24,53 @@
     </extension>
 </addon>
 
+<addon id="plugin.program.luc_kodi.wizard" name="luc_kodi.wizard" version="2.0.1" provider-name="[COLOR yellow]apoyotech[/COLOR]">
+
+<requires>
+	<import addon="xbmc.python" version="3.0.0"/>
+	<import addon="script.module.requests" version="2.31.0" />
+	<import addon="script.module.certifi" version="2023.5.7" />
+	<import addon="script.module.chardet" version="5.1.0" />
+	<import addon="script.module.idna" version="3.4.0" />
+	<import addon="script.module.urllib3" version="2.2.3" />
+	<import addon="script.module.six" version="1.16.0" />
+	<import addon="script.module.simplejson" version="3.19.1" />
+	<import addon="script.module.soupsieve" version="2.4.1" />
+	<import addon="script.module.inputstreamhelper" version="0.7.0" />
+	<import addon="script.module.beautifulsoup4" version="4.9.3" />
+        <import addon="script.module.kodi-six" version="0.1.3.1" />
+</requires>
+
+<extension point="xbmc.python.pluginsource" library="addon.py">
+<provides>executable</provides>
+</extension>
+
+<extension point="xbmc.service" library="service.py"  />
+<extension point="xbmc.addon.metadata">
+<summary lang="en_GB">[COLOR dodgerblue]This plugin.program.wizard is a lightweight template for installing builds and maintenance on open source KODI[/COLOR]</summary>
+<description lang="en_GB">KODI Wizard</description>
+<disclaimer lang="en_GB">This Addon contains no content</disclaimer>
+<language>en</language>
+<plataform>all</plataform>
+<license>GPL-3.0-or-later</license>
+<forum/>
+<website/>
+<email/>
+<source/>
+<news/>
+<assets>
+<icon>resources/icon.png</icon>
+<fanart>resources/fanart.jpg</fanart>
+<banner/>
+<clearlogo/>
+<screenshot>resources/screenshot-1.jpg</screenshot>
+<screenshot>resources/screenshot-2.jpg</screenshot>
+<screenshot>resources/screenshot-3.jpg</screenshot>
+</assets>
+</extension>
+
+</addon>
+
 <addon id="plugin.program.installelementum" name=" [B][COLOR orange]Install Elementum[/COLOR][/B]" version="1.1w" provider-name="[B][COLOR red]Vikings Team[/COLOR][/B]">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
@@ -139,73 +186,6 @@ Consider this scenario:
 - Allow to access the remote videolibary via HTTPS.</news>
     <reuselanguageinvoker>true</reuselanguageinvoker>
   </extension>
-</addon>
-
-<addon id="plugin.video.pseudotv.live" version="0.4.2a" name="PseudoTV Live" provider-name="Lunatixz">
-    <requires>
-        <import addon="xbmc.python" version="3.0.1"/>
-        <import addon="script.module.six" version="1.0.0"/>
-        <import addon="script.module.kodi-six" version="0.1.3.1"/>
-        <import addon="script.module.infotagger" version="0.0.5" />
-        <import addon="script.module.simplecache" version="1.0.0"/>
-        <import addon="plugin.library.node.editor" version="0.0.1" />
-        <import addon="resource.images.studios.white" version="0.0.1"/>
-        <import addon="resource.images.musicgenreicons.text" version="0.0.1"/>
-        <import addon="resource.images.moviegenreicons.transparent" version="0.0.1"/>
-        <import addon="pvr.iptvsimple" optional="true" version="7.5.0"/>
-        <import addon="script.module.pil" optional="true" version="5.1.0"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="resources/lib/default.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.service" library="resources/lib/service.py"/>
-    <extension point="xbmc.python.module" library="resources/lib/"/>
-    <extension point="kodi.context.item">
-        <menu id="kodi.core.main">
-            <item library="resources/lib/context_play.py">
-                <label>30077</label>
-                <visible>[String.Contains(ListItem.Writer,"item=") + ListItem.HasEpg + !ListItem.IsPlayable] +	[Window.IsVisible(tvguide)|Window.IsVisible(tvsearch)|Window.IsVisible(tvchannels)]</visible>
-            </item>
-            <item library="resources/lib/context_playlist.py">
-                <label>30076</label>
-                <visible>[String.Contains(ListItem.Writer,"item=") + ListItem.HasEpg] + [Window.IsVisible(tvguide)|Window.IsVisible(tvsearch)|Window.IsVisible(tvchannels)]</visible>
-            </item>
-            <item library="resources/lib/context_info.py">
-                <label>30075</label>
-                <visible>[String.Contains(ListItem.Writer,"item=") + ListItem.HasEpg] + [Window.IsVisible(tvguide)|Window.IsVisible(tvsearch)|Window.IsVisible(tvchannels)]</visible>
-            </item>
-            <item library="resources/lib/context_match.py">
-                <label>30091</label>
-                <visible>[ListItem.HasEpg] + [Window.IsVisible(tvguide)|Window.IsVisible(tvsearch)|Window.IsVisible(tvchannels)]</visible>
-            </item>
-            <item library="resources/lib/context_browse.py">
-                <label>30087</label>
-                <visible>[String.Contains(ListItem.Writer,"item=") + ListItem.HasEpg] + [Window.IsVisible(tvguide)|Window.IsVisible(tvsearch)|Window.IsVisible(tvchannels)]</visible>
-            </item>
-            <item library="resources/lib/context_create.py">
-                <label>30114</label>
-                <visible>[!ListItem.IsPlayable + ListItem.IsFolder] + [!String.IsEmpty(ListItem.Label)] + String.isEqual(Window(10000).Property(plugin.video.pseudotv.live.isClient),False)</visible>
-            </item>
-        </menu>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en_GB">PseudoTV Live acts like a set-top box for Kodi!</summary>
-        <description lang="en_GB">PseudoTV Live acts similar to normal broadcast or cable TV, complete with pre-defined and user-defined channels. UI Provided by Kodi.</description>
-        <platform>all</platform>
-        <license>GPL-3.0-or-later</license>
-        <source>https://github.com/PseudoTV/PseudoTV_Live</source>
-        <forum>https://forum.kodi.tv/showthread.php?tid=355549</forum>
-        <disclaimer lang="en_GB">BETA PROJECT; SUBJECT TO BUGS</disclaimer>
-        <reuselanguageinvoker>true</reuselanguageinvoker>
-        <assets>
-            <icon>resources/images/icon.png</icon>
-            <fanart>resources/images/fanart.jpg</fanart>
-            <screenshot>resources/images/screenshot01.png</screenshot>
-            <screenshot>resources/images/screenshot02.png</screenshot>
-            <screenshot>resources/images/screenshot03.png</screenshot>
-            <screenshot>resources/images/screenshot04.png</screenshot>
-        </assets>
-    </extension>
 </addon>
 
 <addon id="plugin.video.scrubsv2" version="5.1.42t1" name="[COLOR orange]Scrubs v2[/COLOR]" provider-name="JewBMX">
