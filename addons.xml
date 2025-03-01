@@ -188,7 +188,7 @@ Consider this scenario:
   </extension>
 </addon>
 
-<addon id="plugin.video.scrubsv2" version="5.1.42t1" name="[COLOR orange]Scrubs v2[/COLOR]" provider-name="JewBMX">
+<addon id="plugin.video.scrubsv2" version="5.1.42t2" name="[COLOR orange]Scrubs v2[/COLOR]" provider-name="JewBMX">
     <requires>
         <import addon="script.module.six" />
         <import addon="script.module.kodi-six" />
@@ -669,7 +669,7 @@ Chúng tôi không sở hữu, không lưu trữ nội dung này và sẽ không
   </extension>
 </addon>
 
-<addon id="script.module.blackscrapers" name="Blackscrapers Module" version="1.00.24t" provider-name="janedoe">
+<addon id="script.module.blackscrapers" name="Blackscrapers Module" version="1.00.28t" provider-name="janedoe">
     <requires>
         <import addon="script.module.beautifulsoup4" />
         <import addon="script.module.requests" />
