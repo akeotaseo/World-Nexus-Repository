@@ -173,6 +173,48 @@ Consider this scenario:
   </extension>
 </addon>
 
+<addon id="plugin.video.scrapee" version="0.6" name="[COLOR orange]Scrapee[/COLOR]" provider-name="AkisMpo">
+    <requires>
+        <import addon="script.module.six" />
+        <import addon="script.module.kodi-six" />
+        <import addon="script.module.simplejson" />
+		<import addon="script.module.cloudscraper" optional="true" />
+		<import addon="plugin.video.youtube" optional="true" />
+		<import addon="script.scrubsv2.artwork" optional="true" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+	<extension library="service.py" point="xbmc.service" start="startup" />
+    <extension point="xbmc.addon.metadata">
+		<news>
+			v 0.6 - 08.03.2024 - Fixed a bug in TV shows links. Added sync database in options menu.
+			v 0.5 - 29.02.2024 - Fixed a bug in the cache system. Added version check.
+			v 0.4 - 16.02.2024 - Added cfscrape for older versions of Kodi.
+			v 0.3 - 12.02.2024 - Changed json files to xml in link cache. Added service.py file for db sync.
+			v 0.2 - 15.11.2023 - New settings added. Bugs fixed
+			v 0.1 - 01.11.2023 - Initial Release
+		</news>
+		<summary lang="el_GR">Scraper Ταινιών και Τηλεοπτικών Σειρών</summary>
+		<summary lang="en_US">Movies and TV Series Scraper</summary>
+		<description lang="el_GR">Αυτό το πρόγραμμα συλλέγει πληροφορίες από ιστοσελίδες που περιέχουν ταινίες ή/και σειρές με ελληνικούς και αγγλικούς υπότιτλους.</description>
+		<description lang="en_US">This program collects information from websites that contain movies and/or tv shows with Greek and English subtitles.</description>
+		<disclaimer>
+		</disclaimer>
+		<platform>all</platform>
+		<license>http://www.gnu.org/licenses/</license>
+		<forum></forum>
+		<website></website>
+		<email></email>
+		<mainsource></mainsource>
+		<source></source>
+		<assets>
+			<icon>resources/images/icon.png</icon>
+			<fanart>resources/images/back.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
 <addon id="plugin.video.scrubsv2" version="5.1.42t2" name="[COLOR orange]Scrubs v2[/COLOR]" provider-name="JewBMX">
     <requires>
         <import addon="script.module.six" />
