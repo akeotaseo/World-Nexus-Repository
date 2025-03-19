@@ -24,7 +24,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.program.luc_kodi.wizard" name="luc_kodi.wizard" version="2.0.5" provider-name="[COLOR gold]apoyotech[/COLOR]">
+<addon id="plugin.program.luc_kodi.wizard" name="luc_kodi.wizard" version="2.0.6" provider-name="[COLOR gold]apoyotech[/COLOR]">
 	<requires>
 	<import addon="xbmc.python" version="3.0.1"/>
 	</requires>
@@ -146,11 +146,12 @@ Consider this scenario:
 </addon>
 
 <addon id="plugin.video.external.library"
-    version="1.1.0"
+    version="1.1.2"
     name="External Kodi Videolibrary Client"
     provider-name="Roman V.M.">
   <requires>
     <import addon="xbmc.python" version="3.0.1"/>
+    <import addon="script.module.simple-requests"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="main.py">
     <provides>video</provides>
@@ -166,9 +167,8 @@ Consider this scenario:
       <icon>icon.png</icon>
     </assets>
     <source>https://github.com/romanvm/kodi.external.library</source>
-    <news>1.1.0:
-- Add a menu item for updating the remote videolibrary.
-- Allow to access the remote videolibary via HTTPS.</news>
+    <news>1.1.2:
+- Refresh movies/episodes list after resume/playback state has been updated.</news>
     <reuselanguageinvoker>true</reuselanguageinvoker>
   </extension>
 </addon>
