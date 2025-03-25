@@ -288,7 +288,7 @@ Chúng tôi không sở hữu, không lưu trữ nội dung này và sẽ không
 </extension>
 </addon>
 
-<addon id="plugin.video.ytlite" name="YouTube LITE" version="1.0.6" provider-name="mrfixit2001">
+<addon id="plugin.video.ytlite" name="YouTube LITE" version="1.0.7" provider-name="mrfixit2001">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
   </requires>
