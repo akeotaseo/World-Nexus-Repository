@@ -24,7 +24,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.program.luc_kodi.wizard" name="luc_kodi.wizard" version="2.0.6" provider-name="[COLOR gold]apoyotech[/COLOR]">
+<addon id="plugin.program.luc_kodi.wizard" name="luc_kodi.wizard" version="2.0.8" provider-name="[COLOR gold]apoyotech[/COLOR]">
 	<requires>
 	<import addon="xbmc.python" version="3.0.1"/>
 	</requires>
@@ -79,17 +79,17 @@
 
 <addon id="plugin.switchback" name="Switchback" version="1.0.0" provider-name="bossanova808">
     <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
-        <import addon="script.module.bossanova808" version="1.0.0"/>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.bossanova808" version="1.0.0" />
         <import addon="script.module.infotagger" version="0.0.7" />
     </requires>
-    <!-- A service entrypoint to keep track of playbacks -->
+    <!-- The main service entry point, to keep track of playbacks -->
     <extension point="xbmc.service" library="service.py" />
-    <!-- ...and a plugin entrypoint to handle presenting and playing media from the switchback playlist -->
+    <!-- ...and a plugin entry point, to handle presenting and playing media from the switchback playlist -->
     <extension point="xbmc.python.pluginsource" library="plugin.py">
-		<provides>video audio</provides>
-	</extension>
-    <!-- ...and a context menu extension point -->
+        <provides>video audio</provides>
+    </extension>
+    <!-- ...and a context menu extension point, for another playback mechanism -->
     <extension point="kodi.context.item">
         <menu id="kodi.core.main">
             <item library="context_menu.py" args="switchback">
@@ -103,20 +103,17 @@
         </menu>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary lang="en_GB">Utility for fast switching between recently played media.</summary>
+        <summary lang="en_GB">Switchback is a Kodi utility for fast switching between recently played media.</summary>
         <description lang="en_GB">
 Kodi utility for fast switching between recently played media.
-
-Keeps a list of recently played media - supports Kodi library episodes, movies, PVR channels, songs and non-library files.  Does not (yet?) support add-ons or PVR recordings.
-
-The primary intended use is to make for super easy Switchback between two in-progress videos (by binding a remote key to Switchback, see Wiki/Forum thread for info).
-
+Keeps a list of recently played videos.
+The primary intended use is to make for super easy Switchback between two in progress video. See Wiki for usage notes including how to bind remote/keyboard controls for instant Switchback.
 Consider this scenario:
-— You are watching 'video A' with your partner.  You're interrupted, and your partner needs to tend to the kids/howl at the moon.
-— You navigate to 'video B' and watch some of that.
-— Your partner comes back.
-— You hit your one button 'Switchback' and 'video A' starts playing again, no need for tedious navigation etc.
-— You're interrupted - again - (the moon is so very bright tonight!) hit your 'Switchback' to resume 'video B' immediately, again with one magic button and no tedious navigation.
+* You're watching 'video A' with your partner. You're interrupted, and your partner needs to tend to the kids/howl at the moon.
+* You navigate to 'video B' and watch some of that while you're waiting.
+* Your partner comes back.
+* You hit your one button 'Switchback' and 'video A' instantly starts playing again - no need for tedious navigation etc.
+* You're interrupted, again! The moon really is so very bright tonight. Hit your 'Switchback' button to instantly resume 'video B', again with no tedious navigation.
         </description>
         <platform>all</platform>
         <license>GPL-3.0-only</license>
@@ -186,44 +183,40 @@ Consider this scenario:
   </extension>
 </addon>
 
-<addon id="plugin.video.scrapee" version="0.6" name="[COLOR orange]Scrapee[/COLOR]" provider-name="AkisMpo">
+<addon id="plugin.video.scrapee" name="Scrapee" provider-name="Akismpo" version="1.0">
     <requires>
-        <import addon="script.module.six" />
+        <import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests" version="2.31.0" />
+		<import addon="script.module.six" />
         <import addon="script.module.kodi-six" />
         <import addon="script.module.simplejson" />
-		<import addon="script.module.cloudscraper" optional="true" />
+		<import addon="script.module.resolveurl" version="5.0.00" optional="true" />
+		<import addon="script.module.pyxbmct" version="1.2.0" />
 		<import addon="plugin.video.youtube" optional="true" />
-		<import addon="script.scrubsv2.artwork" optional="true" />
     </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
+    <extension library="resources/lib/scrapee.py" point="xbmc.python.pluginsource">
         <provides>video</provides>
     </extension>
-	<extension library="service.py" point="xbmc.service" start="startup" />
+    <extension library="resources/lib/service.py" point="xbmc.service"/>
+    <extension library="resources/lib/" point="xbmc.python.module"/>
     <extension point="xbmc.addon.metadata">
-		<news>
-			v 0.6 - 08.03.2024 - Fixed a bug in TV shows links. Added sync database in options menu.
-			v 0.5 - 29.02.2024 - Fixed a bug in the cache system. Added version check.
-			v 0.4 - 16.02.2024 - Added cfscrape for older versions of Kodi.
-			v 0.3 - 12.02.2024 - Changed json files to xml in link cache. Added service.py file for db sync.
-			v 0.2 - 15.11.2023 - New settings added. Bugs fixed
-			v 0.1 - 01.11.2023 - Initial Release
-		</news>
+		<reuselanguageinvoker>true</reuselanguageinvoker>
+		<news>INFO: For latest changes see Changelog within Tools of add-on.</news>
 		<summary lang="el_GR">Scraper Ταινιών και Τηλεοπτικών Σειρών</summary>
 		<summary lang="en_US">Movies and TV Series Scraper</summary>
-		<description lang="el_GR">Αυτό το πρόγραμμα συλλέγει πληροφορίες από ιστοσελίδες που περιέχουν ταινίες ή/και σειρές με ελληνικούς και αγγλικούς υπότιτλους.</description>
-		<description lang="en_US">This program collects information from websites that contain movies and/or tv shows with Greek and English subtitles.</description>
-		<disclaimer>
-		</disclaimer>
+		<description lang="el_GR">Αυτό το πρόγραμμα συλλέγει πληροφορίες από ιστοσελίδες που περιέχουν ταινίες ή/και σειρές με ελληνικούς ή/και αγγλικούς υπότιτλους.</description>
+		<description lang="en_US">This program collects information from websites that contain movies and/or tv shows with Greek and/or English subtitles.</description>
+		<disclaimer lang="el">Ο δημιουργός δεν φιλοξενεί ή διανέμει οποιαδήποτε από το περιεχόμενο που εμφανίζεται από αυτό το πρόσθετο και δεν έχει οποιαδήποτε σχέση με την ιστοσελίδα και τους ιδιοκτήτες αυτής.</disclaimer>
+		<disclaimer lang="en">The author of this addon does not host any of the content which is found and has no affiliation with any of the content providers.</disclaimer>
 		<platform>all</platform>
-		<license>http://www.gnu.org/licenses/</license>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
 		<forum></forum>
-		<website></website>
-		<email></email>
-		<mainsource></mainsource>
+		<website>https://akismpo.com/projects/my-plugin-tv-shows-and-movies-kodi/</website>
+		<email>tsiomp@outlook.com</email>
 		<source></source>
 		<assets>
-			<icon>resources/images/icon.png</icon>
-			<fanart>resources/images/back.jpg</fanart>
+			<icon>resources/media/icon.png</icon>
+			<fanart>resources/media/back.jpg</fanart>
 		</assets>
 	</extension>
 </addon>
