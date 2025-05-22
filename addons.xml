@@ -311,21 +311,21 @@ Chúng tôi không sở hữu, không lưu trữ nội dung này và sẽ không
   </extension>
 </addon>
 
-<addon id="repository.BrazAIO" name="BrazAIO Unofficial" version="1.2c" provider-name="Brazuca">
+<addon id="repository.BrazAIO" name="BrazAIO Unofficial" version="1.2d" provider-name="Brazuca">
 <requires>
 <import addon="xbmc.addon" version="12.0.0"/>
 </requires>
 <extension point="xbmc.addon.repository" name="Brazuca Play Repository">
   		<dir minversion="17.0.0" maxversion="18.9.0">
-			<info compressed="false">https://gitea.com/joel00/brkodirepo/raw/branch/main/leia/addons.xml</info>
-			<checksum>https://gitea.com/joel00/brkodirepo/raw/branch/main/leia/addons.xml.md5</checksum>
-			<datadir zip="true">https://gitea.com/joel00/brkodirepo/raw/branch/main/leia</datadir>
+			<info compressed="false">https://github.com/zoreu/kodirepo/raw/main/leia/addons.xml</info>
+			<checksum>https://github.com/zoreu/kodirepo/raw/main/leia/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/zoreu/kodirepo/raw/main/leia</datadir>
 			<hashes>false</hashes>
     	</dir>
-  		<dir minversion="19.0.0">
-			<info compressed="false">https://gitea.com/joel00/brkodirepo/raw/branch/main/nexus/addons.xml</info>
-			<checksum>https://gitea.com/joel00/brkodirepo/raw/branch/main/nexus/addons.xml.md5</checksum>
-			<datadir zip="true">https://gitea.com/joel00/brkodirepo/raw/branch/main/nexus</datadir>
+  		<dir minversion="18.9.1">
+			<info compressed="false">https://github.com/zoreu/kodirepo/raw/main/nexus/addons.xml</info>
+			<checksum>https://github.com/zoreu/kodirepo/raw/main/nexus/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/zoreu/kodirepo/raw/main/nexus</datadir>
 			<hashes>false</hashes>
     	</dir>
 	<dir minversion="16.0.0" maxversion="18.9.0">
@@ -334,14 +334,12 @@ Chúng tôi không sở hữu, không lưu trữ nội dung này và sẽ không
 			<datadir zip="true">https://github.com/vikingskoditeam/vikingskoditeam.github.io/raw/master/leia</datadir>
 			<hashes>false</hashes>
     </dir>
-
    <dir minversion="18.9.1">
 			<info compressed="false">https://github.com/vikingskoditeam/vikingskoditeam.github.io/raw/master/matrix/addons.xml</info>
 			<checksum>https://github.com/vikingskoditeam/vikingskoditeam.github.io/raw/master/matrix/addons.xml.md5</checksum>
 			<datadir zip="true">https://github.com/vikingskoditeam/vikingskoditeam.github.io/raw/master/matrix</datadir>
 			<hashes>false</hashes>
     </dir>
-
 <dir minversion="16.0.0" maxversion="18.9.0">
 <info compressed="false">https://raw.githubusercontent.com/skyrisk/brazucaplay/master/addons/repo/addons.xml</info>
 <checksum>https://raw.githubusercontent.com/skyrisk/brazucaplay/master/addons/repo/addons.xml.md5</checksum>
@@ -406,7 +404,6 @@ Chúng tôi không sở hữu, không lưu trữ nội dung này và sẽ không
 			<datadir zip="true">https://repository.oneplayhd.com/leia</datadir>
 			<hashes>false</hashes>
     	</dir>
-
   		<dir minversion="18.9.1">
 			<info compressed="false">https://repository.oneplayhd.com/matrix/addons.xml</info>
 			<checksum>https://repository.oneplayhd.com/matrix/addons.xml.md5</checksum>
