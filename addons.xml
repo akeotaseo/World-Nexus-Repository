@@ -24,7 +24,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.program.luc_kodi.wizard" name="luc_kodi.wizard" version="2.0.8" provider-name="[COLOR gold]apoyotech[/COLOR]">
+<addon id="plugin.program.luc_kodi.wizard" name="luc_kodi.wizard" version="2.0.9" provider-name="[COLOR mediumspringgreen]apoyotech[/COLOR]">
 	<requires>
 	<import addon="xbmc.python" version="3.0.1"/>
 	</requires>
