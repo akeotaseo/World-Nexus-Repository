@@ -221,7 +221,7 @@ Consider this scenario:
 	</extension>
 </addon>
 
-<addon id="plugin.video.scrubsv2" version="5.1.42t2" name="[COLOR orange]Scrubs v2[/COLOR]" provider-name="JewBMX">
+<addon id="plugin.video.scrubsv2" version="5.1.42t2gr1" name="[COLOR orange]Scrubs v2[/COLOR]" provider-name="JewBMX">
     <requires>
         <import addon="script.module.six" />
         <import addon="script.module.kodi-six" />
