@@ -24,7 +24,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.program.luc_kodi.wizard" name="[COLOR mediumspringgreen]luc_[/COLOR]kodi.wizard" version="2.0.10" provider-name="[COLOR mediumspringgreen]apoyotech[/COLOR]">
+<addon id="plugin.program.luc_kodi.wizard" name="[COLOR mediumspringgreen][B]luc_[/B][/COLOR]kodi.wizard" version="2.0.12" provider-name="[COLOR fffa9900]apoyotech[/COLOR]">
 	<requires>
 	<import addon="xbmc.python" version="3.0.1"/>
 	</requires>
@@ -34,8 +34,8 @@
 	<extension point="xbmc.service" library="service.py" />
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en_GB">[COLOR fffa9900]This plugin.program.wizard it is inspired by plugin.program.simplewizard and is used to create an install builds and maintenance in  the open source KODI application[/COLOR]</summary>
-		<description lang="en_GB">Kodi Wizard</description>
-		<disclaimer lang="en_GB">[COLOR red]This plugin.program.wizard contains no content[/COLOR]</disclaimer>
+		<description lang="en_GB">[COLOR mediumspringgreen]plugin.program.wizard for KODI[/COLOR]</description>
+		<disclaimer lang="en_GB">[COLOR mediumspringgreen]This plugin.program.wizard contains no content[/COLOR]</disclaimer>
 		<language>en</language>
 		<platform>all</platform>
 		<license>GPL-3.0-or-later</license>
