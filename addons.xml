@@ -201,44 +201,6 @@ Consider this scenario:
   </extension>
 </addon>
 
-<addon id="plugin.video.scrapee" name="Scrapee" provider-name="Akismpo" version="1.0">
-    <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.requests" version="2.31.0" />
-		<import addon="script.module.six" />
-        <import addon="script.module.kodi-six" />
-        <import addon="script.module.simplejson" />
-		<import addon="script.module.resolveurl" version="5.0.00" optional="true" />
-		<import addon="script.module.pyxbmct" version="1.2.0" />
-		<import addon="plugin.video.youtube" optional="true" />
-    </requires>
-    <extension library="resources/lib/scrapee.py" point="xbmc.python.pluginsource">
-        <provides>video</provides>
-    </extension>
-    <extension library="resources/lib/service.py" point="xbmc.service"/>
-    <extension library="resources/lib/" point="xbmc.python.module"/>
-    <extension point="xbmc.addon.metadata">
-		<reuselanguageinvoker>true</reuselanguageinvoker>
-		<news>INFO: For latest changes see Changelog within Tools of add-on.</news>
-		<summary lang="el_GR">Scraper Ταινιών και Τηλεοπτικών Σειρών</summary>
-		<summary lang="en_US">Movies and TV Series Scraper</summary>
-		<description lang="el_GR">Αυτό το πρόγραμμα συλλέγει πληροφορίες από ιστοσελίδες που περιέχουν ταινίες ή/και σειρές με ελληνικούς ή/και αγγλικούς υπότιτλους.</description>
-		<description lang="en_US">This program collects information from websites that contain movies and/or tv shows with Greek and/or English subtitles.</description>
-		<disclaimer lang="el">Ο δημιουργός δεν φιλοξενεί ή διανέμει οποιαδήποτε από το περιεχόμενο που εμφανίζεται από αυτό το πρόσθετο και δεν έχει οποιαδήποτε σχέση με την ιστοσελίδα και τους ιδιοκτήτες αυτής.</disclaimer>
-		<disclaimer lang="en">The author of this addon does not host any of the content which is found and has no affiliation with any of the content providers.</disclaimer>
-		<platform>all</platform>
-		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-		<forum></forum>
-		<website>https://akismpo.com/projects/my-plugin-tv-shows-and-movies-kodi/</website>
-		<email>tsiomp@outlook.com</email>
-		<source></source>
-		<assets>
-			<icon>resources/media/icon.png</icon>
-			<fanart>resources/media/back.jpg</fanart>
-		</assets>
-	</extension>
-</addon>
-
 <addon id="plugin.video.scrubsv2" version="5.1.42t3" name="[COLOR orange]Scrubs v2[/COLOR]gr" provider-name="JewBMX">
     <requires>
         <import addon="script.module.six" />
