@@ -24,7 +24,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.program.luc_kodi.wizard" name="[B][COLOR ff00fa9a]luc_[/COLOR][/B]kodi.wizard" version="2.0.22" provider-name="[COLOR fffa9900]apoyotech[/COLOR]">
+<addon id="plugin.program.luc_kodi.wizard" name="[B][COLOR ff00fa9a]luc_[/COLOR][/B]kodi.wizard" version="2.0.23" provider-name="[COLOR fffa9900]apoyotech[/COLOR]">
 	<requires>
 	<import addon="xbmc.python" version="3.0.1"/>
 	</requires>
@@ -75,6 +75,75 @@
 			<fanart>fanart.jpg</fanart>
 		</assets>
 	</extension>
+</addon>
+
+<addon id="plugin.program.shortlist" name="Shortlist" version="0.0.13" provider-name="Gothicawakening, kcook98765, krruzic, gbchr">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_gb">Shortlist movies to watch</summary>
+    <description lang="en_gb">Provides a way to build shortlists of movies to watch</description>
+    <disclaimer lang="en_gb"></disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license></license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
+    <news></news>
+    <assets>
+        <icon>resources/icon.png</icon>
+        <fanart></fanart>
+        <screenshot></screenshot>
+    </assets>
+  </extension>
+  <extension point="kodi.context.item">
+      <menu id="kodi.core.main">
+        <item library="capture.py" args="file">
+            <label>30012</label>
+            <visible>!ListItem.IsFolder + !String.IsEqual(Container.PluginName,plugin.program.shortlist)</visible>
+        </item>
+        <item library="capture.py" args="folder">
+            <label>30014</label>
+            <visible>ListItem.IsFolder + !String.IsEqual(Container.PluginName,plugin.program.shortlist)</visible>
+        </item>
+      </menu>
+  </extension>
+</addon>
+
+<addon id="plugin.video.daddylive" name="Daddylive" version="4.45w" provider-name="THE CREW">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" />
+        <import addon="script.module.inputstreamhelper" />
+        <import addon="inputstream.ffmpegdirect" />
+        <import addon="script.module.six"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <description lang="pl">1.2</description>
+        <disclaimer lang="pl">test
+        </disclaimer>
+        <summary lang="en">Live TV and Sports</summary>
+        <description lang="en">Live TV and Sports</description>
+        <disclaimer lang="en">test
+        </disclaimer>
+        <language>pl</language>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <website></website>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
 </addon>
 
 <addon id="plugin.video.duffyou" name="Duff You (android-armv7)" version="0.2.1" provider-name="La Taberna">
@@ -175,6 +244,55 @@
             <fanart>resources/images/fanart.jpg</fanart>
         </assets>
         <news>Total CleanUp of Providers : Checked and Cleaned as of July 2024. [CR] Check ChangeLog For More Details.</news>
+    </extension>
+</addon>
+
+<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.14.8" provider-name="WNT2">
+    <requires>
+        <import addon="script.module.requests"/>
+        <import addon="script.module.six"/>
+        <import addon="inputstream.adaptive"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">WatchNixtoons2</summary>
+        <description lang="en">
+Watch cartoons and anime from [COLOR orange][B]www.wcostream.tv[/B][/COLOR].
+
+Support the WatchCartoonOnline website with a PayPal donation to:
+[COLOR khaki][B]wcohelp@yandex.com[/B][/COLOR]
+
+Add-on originally by doko.
+Random updates by lolage.
+        </description>
+        <disclaimer lang="en">The authors of this addon do not host any of the content found or have any affiliation with the content providers. This add-on only scrapes web pages.</disclaimer>
+        <language>en</language>
+        <platform lang="en">all</platform>
+        <news>[COLOR orange][B]WatchNixtoons2[/B][/COLOR] - Cartoons &amp; Anime
+[B]0.14.8:[/B]
+- fix show parent REGEX to fix recently watched
+
+[B]0.14.7:[/B]
+- fix episode REGEX due to South Park
+- fix Thumbnails
+- Update Thumbnail Hashes
+- Update User Agent
+
+[B]0.14.6:[/B]
+- fix stream resolving
+
+[B]0.14.5:[/B]
+- fix stream resolving
+- Update Thumbnail Hashes
+
+[B]0.14.4:[/B]
+- Update Thumbnail Hashes
+- Update User Agent</news>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
     </extension>
 </addon>
 
