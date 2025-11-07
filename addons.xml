@@ -24,7 +24,28 @@
     </extension>
 </addon>
 
-<addon id="plugin.program.luc_kodi.wizard" name="[B][COLOR ff00fa9a]luc_[/COLOR][/B]kodi.wizard" version="2.0.25" provider-name="[COLOR fffe9900]apoyotech[/COLOR]">
+<addon id="plugin.program.installelementum" name=" [B][COLOR orange]Install Elementum[/COLOR][/B]" version="1.1w" provider-name="[B][COLOR red]Vikings Team[/COLOR][/B]">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.kodi-six" />
+        <import addon="script.module.future" version="0.16.0.4"/>
+		</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.service" library="startup.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Ares Vikings Wizard</summary>
+		<description lang="en">.</description>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="plugin.program.luc_kodi.wizard" name="[B][COLOR ff00fa9a]luc_[/COLOR][/B]kodi.wizard" version="2.0.26" provider-name="[COLOR fffe9900]apoyotech[/COLOR]">
 	<requires>
 	<import addon="xbmc.python" version="3.0.1"/>
 	</requires>
@@ -52,27 +73,6 @@
 				<screenshot>resources/screenshot-1.jpg</screenshot>
                 <screenshot>resources/screenshot-2.jpg</screenshot>
                 <screenshot>resources/screenshot-3.jpg</screenshot>
-		</assets>
-	</extension>
-</addon>
-
-<addon id="plugin.program.installelementum" name=" [B][COLOR orange]Install Elementum[/COLOR][/B]" version="1.1w" provider-name="[B][COLOR red]Vikings Team[/COLOR][/B]">
-	<requires>
-		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.kodi-six" />
-        <import addon="script.module.future" version="0.16.0.4"/>
-		</requires>
-	<extension point="xbmc.python.pluginsource" library="default.py">
-		<provides>executable</provides>
-	</extension>
-	<extension point="xbmc.service" library="startup.py" start="startup" />
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Ares Vikings Wizard</summary>
-		<description lang="en">.</description>
-		<platform>all</platform>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
 		</assets>
 	</extension>
 </addon>
