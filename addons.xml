@@ -146,7 +146,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.daddylive" name="Daddylive" version="4.45w" provider-name="THE CREW">
+<addon id="plugin.video.daddylive" name="Daddylive" version="4.53W" provider-name="THE CREW">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" />
