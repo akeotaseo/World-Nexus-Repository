@@ -146,7 +146,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.daddylive" name="Daddylive" version="4.56w" provider-name="tommhe14 - THE CREW">
+<addon id="plugin.video.daddylive" name="DaddyLive v3" version="1.1.4w" provider-name="Guenole84">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" />
@@ -158,21 +158,15 @@
         <provides>video</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <description lang="pl">1.2</description>
-        <disclaimer lang="pl">test
-        </disclaimer>
         <summary lang="en">Live TV and Sports</summary>
         <description lang="en">Live TV and Sports</description>
-        <disclaimer lang="en">test
-        </disclaimer>
-        <language>pl</language>
         <platform>all</platform>
         <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-        <website></website>
         <assets>
             <icon>icon.png</icon>
             <fanart>fanart.jpg</fanart>
         </assets>
+        <news>v1.1.4: Timeout auth 8s + retry server_lookup + réutilisation credentials cachés</news>
     </extension>
 </addon>
 
