@@ -146,7 +146,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.daddylive" name="DaddyLive v3" version="1.1.4w" provider-name="Guenole84">
+<addon id="plugin.video.daddylive" name="DaddyLive v3" version="1.1.8w" provider-name="Guenole84">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" />
@@ -166,7 +166,7 @@
             <icon>icon.png</icon>
             <fanart>fanart.jpg</fanart>
         </assets>
-        <news>v1.1.4: Timeout auth 8s + retry server_lookup + réutilisation credentials cachés</news>
+        <news>v1.1.8: Export M3U + intégration PVR IPTV Simple Client</news>
     </extension>
 </addon>
 
