@@ -146,7 +146,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.daddylive" name="DaddyLive v3" version="1.2.3w" provider-name="Guenole84">
+<addon id="plugin.video.daddylive" name="DaddyLive v3" version="1.3.3w" provider-name="Guenole84">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" />
@@ -166,7 +166,7 @@
             <icon>icon.png</icon>
             <fanart>fanart.jpg</fanart>
         </assets>
-        <news>v1.1.8: Export M3U + intégration PVR IPTV Simple Client</news>
+        <news>v1.3.3: get_any_player_stream() itère sur tous les players (lovecdn/ligapk/générique) ; menu CDN renommé Auto/Manuel</news>
     </extension>
 </addon>
 
