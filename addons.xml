@@ -146,7 +146,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.daddylive" name="DaddyLive v3" version="1.3.3w" provider-name="Guenole84">
+<addon id="plugin.video.daddylive" name="DaddyLive" version="1.0.9w" provider-name="Arkane14">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" />
@@ -166,7 +166,7 @@
             <icon>icon.png</icon>
             <fanart>fanart.jpg</fanart>
         </assets>
-        <news>v1.3.3: get_any_player_stream() itère sur tous les players (lovecdn/ligapk/générique) ; menu CDN renommé Auto/Manuel</news>
+        <news>v1.0.9: probe lovecdn before use; AnyPlayer fallback to CHEVY no-auth when all players fail</news>
     </extension>
 </addon>
 
