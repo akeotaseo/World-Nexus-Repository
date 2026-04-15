@@ -146,7 +146,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.daddylive" name="DaddyLive" version="1.0.19W" provider-name="Arkane14">
+<addon id="plugin.video.daddylive" name="DaddyLive" version="1.0.20W" provider-name="Arkane14">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" />
@@ -166,7 +166,7 @@
             <icon>icon.png</icon>
             <fanart>fanart.jpg</fanart>
         </assets>
-        <news>v1.0.19: Detect cdn.gptimage15.com placeholder CDN via URL (AES-encrypted segments undetectable by byte probe)</news>
+        <news>v1.0.20: Fix ch.773 — route via lovecdn player; fix CHEVY AES+header scan false positives; fix stall recovery for non-premium channels</news>
     </extension>
 </addon>
 
