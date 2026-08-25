@@ -146,7 +146,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.daddylive" name="DaddyLive" version="1.0.22W" provider-name="Arkane14, derzis, AS">
+<addon id="plugin.video.daddylive" name="DaddyLive" version="1.2.0W" provider-name="Arkane14">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" />
@@ -166,7 +166,7 @@
             <icon>icon.png</icon>
             <fanart>fanart.jpg</fanart>
         </assets>
-        <news>v1.0.20: Fix ch.773 — route via lovecdn player; fix CHEVY AES+header scan false positives; fix stall recovery for non-premium channels</news>
+        <news>v1.2.0: DLTV</news>
     </extension>
 </addon>
 
@@ -241,7 +241,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.live.streamspro" name="LiveStreamsPro" version="3.0.0~alpha4.27" provider-name="gujal">
+<addon id="plugin.video.live.streamspro" name="LiveStreamsPro" version="3.0.0~alpha4.28" provider-name="gujal">
     <requires>
         <import addon="script.module.six" />
         <import addon="script.module.kodi-six" />
@@ -314,7 +314,7 @@ In addition to what livestreams allowed you to do, you can now,
     </extension>
 </addon>
 
-<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.14.21" provider-name="WNT2">
+<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.14.23" provider-name="WNT2">
     <requires>
         <import addon="script.module.requests"/>
         <import addon="script.module.six"/>
@@ -338,6 +338,17 @@ Random updates by lolage.
         <language>en</language>
         <platform lang="en">all</platform>
         <news>[COLOR orange][B]WatchNixtoons2[/B][/COLOR] - Cartoons &amp; Anime
+[B]0.14.23:[/B]
+- Fix Premium Detection
+
+[B]0.14.22:[/B]
+- Fix Search
+- Rework of Search Menu
+- Enable Thumbnails for Genre Results
+- Enable Thumbnails and Fanart for Movie Search
+- Update Thumbnail Hashes
+- Update User Agent
+
 [B]0.14.21:[/B]
 - Fix Latest Movies Section
 - Update Thumbnail Hashes
@@ -349,13 +360,7 @@ Random updates by lolage.
 - Remove m3u8 resolving
 - Change how delay on requests work to make feel more responsive
 - Update Thumbnail Hashes
-- Update User Agent
-
-[B]0.14.18:[/B]
-- Fix resolving mp4 files again
-
-[B]0.14.17:[/B]
-- Fix resolving mp4 files again</news>
+- Update User Agent</news>
         <assets>
             <icon>icon.png</icon>
         </assets>
