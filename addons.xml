@@ -146,7 +146,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.daddylive" name="DaddyLive" version="1.2.0W" provider-name="Arkane14">
+<addon id="plugin.video.daddylive" name="DaddyLive" version="1.2.6W" provider-name="Arkane14">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" />
@@ -280,89 +280,6 @@ In addition to what livestreams allowed you to do, you can now,
         <assets>
             <icon>icon.png</icon>
             <fanart>fanart.jpg</fanart>
-        </assets>
-    </extension>
-</addon>
-
-<addon id="plugin.video.scrubsv2" version="5.1.42t3" name="[COLOR orange]Scrubs v2[/COLOR]gr" provider-name="JewBMX">
-    <requires>
-        <import addon="script.module.six" />
-        <import addon="script.module.kodi-six" />
-        <import addon="script.module.simplejson" />
-        <import addon="script.module.requests" />
-        <import addon="script.module.resolveurl" />
-        <import addon="script.scrubsv2.artwork" optional="true" />
-        <import addon="script.trakt" optional="true" />
-        <import addon="plugin.video.json_iptv" optional="true" />
-        <import addon="plugin.video.youtube" optional="true" />
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="main.py">
-        <provides>video</provides>
-    </extension>
-    <extension library="service.py" point="xbmc.service" start="startup" />
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">A Clean Source To Dirty Things...</summary>
-        <description lang="en">Movies, Tv Shows, Anime, and What Not. [CR] See Changelog For Changes. [CR] You enable/disable the ones you dont like and let me handle the broken providers. [CR] How it should be :)</description>
-        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
-        <license>Free the People!, Free the World!!</license>
-        <platform>all</platform>
-        <assets>
-            <icon>resources/images/icon.png</icon>
-            <fanart>resources/images/fanart.jpg</fanart>
-        </assets>
-        <news>Total CleanUp of Providers : Checked and Cleaned as of July 2024. [CR] Check ChangeLog For More Details.</news>
-    </extension>
-</addon>
-
-<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.14.23" provider-name="WNT2">
-    <requires>
-        <import addon="script.module.requests"/>
-        <import addon="script.module.six"/>
-        <import addon="inputstream.adaptive"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">WatchNixtoons2</summary>
-        <description lang="en">
-Watch cartoons and anime from [COLOR orange][B]www.wcostream.tv[/B][/COLOR].
-
-Support the WatchCartoonOnline website with a PayPal donation to:
-[COLOR khaki][B]wcohelp@yandex.com[/B][/COLOR]
-
-Add-on originally by doko.
-Random updates by lolage.
-        </description>
-        <disclaimer lang="en">The authors of this addon do not host any of the content found or have any affiliation with the content providers. This add-on only scrapes web pages.</disclaimer>
-        <language>en</language>
-        <platform lang="en">all</platform>
-        <news>[COLOR orange][B]WatchNixtoons2[/B][/COLOR] - Cartoons &amp; Anime
-[B]0.14.23:[/B]
-- Fix Premium Detection
-
-[B]0.14.22:[/B]
-- Fix Search
-- Rework of Search Menu
-- Enable Thumbnails for Genre Results
-- Enable Thumbnails and Fanart for Movie Search
-- Update Thumbnail Hashes
-- Update User Agent
-
-[B]0.14.21:[/B]
-- Fix Latest Movies Section
-- Update Thumbnail Hashes
-
-[B]0.14.20:[/B]
-- Change to new thumbnail domain
-
-[B]0.14.19:[/B]
-- Remove m3u8 resolving
-- Change how delay on requests work to make feel more responsive
-- Update Thumbnail Hashes
-- Update User Agent</news>
-        <assets>
-            <icon>icon.png</icon>
         </assets>
     </extension>
 </addon>
@@ -784,33 +701,6 @@ Random updates by lolage.
             <fanart>fanart.jpg</fanart>
         </assets>
   </extension>
-</addon>
-
-<addon id="script.module.blackscrapers" name="Blackscrapers Module" version="1.00.28t" provider-name="janedoe">
-    <requires>
-        <import addon="script.module.beautifulsoup4" />
-        <import addon="script.module.requests" />
-        <import addon="script.module.six" />
-        <import addon="script.module.kodi-six" />
-        <import addon="script.module.simplejson" />
-    </requires>
-    <extension point="xbmc.python.module" library="lib" />
-    <extension point="xbmc.python.pluginsource" library="lib/default.py">
-        <provides>executable</provides>
-    </extension>
-        <extension point="xbmc.addon.metadata">
-            <platform>all</platform>
-            <summary lang="en">Blackscrapers Module</summary>
-            <description>Blackscrapers</description>
-                <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-    <assets>
-        <icon>icon.png</icon>
-        <fanart>fanart.jpg</fanart>
-    </assets>
-    <news></news>
-    </extension>
 </addon>
 
 <addon id="script.module.cloudscraper" name="CloudScraper2" version="1.2.66" provider-name="venomous">
